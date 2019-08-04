@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script type="text/javascript"
+  src="http://code.jquery.com/jquery-2.0.0.js"></script>
+<script type="text/javascript"
+  src="http://code.jquery.com/mobile/1.3.1/jquery.mobile-1.3.1.js"></script>
+<link rel="stylesheet" type="text/css"
+  href="http://code.jquery.com/mobile/1.3.1/jquery.mobile-1.3.1.css">
+<script type="text/javascript">
+$(document).ready(function() {
+    $("#addContribution").on('mousedown touchstart', function(){
+        var newAmount = $('#contributionAmount').val();
+        if(newAmount != '') {
+            $('#contributionList').append('<li><a>' + newAmount + '</a><a class="deleteMe"></a></li>').listview('refresh');
+            var column1RelArray = $('#contributionList').text();
+            $('#result').val(column1RelArray);
+            $('#contributionAmount').val('');
+        } else {
+          
+        }
+     });
+ });
+</script>
+</head>
+<body>
+
+
+</body>
+</html>

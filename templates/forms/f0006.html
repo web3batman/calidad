@@ -1,0 +1,73 @@
+{% extends 'forms/main_template.html' %}
+{% block title %}Curado{% endblock %}
+{% block content %}
+    <fieldset data-role="controlgroup" data-type="horizontal">
+        <legend>Resistecia de concreto:</legend>
+        <input type="radio" name="resistencia_concreto" id="resistenciaa" value="40 Mpa">
+        <label for="resistenciaa">40 Mpa</label>
+        <input type="radio" name="resistencia_concreto" id="resistenciab" value="31 Mpa" checked="checked">
+        <label for="resistenciab">31 Mpa</label>
+        <input type="radio" name="resistencia_concreto" id="resistenciac" value="15 Mpa">
+        <label for="resistenciac">15 Mpa</label>      
+        <input type="radio" name="resistencia_concreto" id="resistenciad" value="1 Mpa" >
+        <label for="resistenciad">1 Mpa</label>    
+    </fieldset> 
+
+        <label for="slider-10">Temperatura del concreto:</label>
+        <input type="range" name="temperatura_concreto" id="idtemperatura_concreto" min="0" max="40" step="1" value="29">
+
+        <label for="slider-10">Temperatura ambiente:</label>
+        <input type="range" name="temperatura_ambiente" id="idtemperatura_ambiente" min="0" max="40" step="1" value="29">
+
+        <label for="slider-10">Slump:</label>
+        <input type="range" name="slump" id="idslump" min="0" max="10" step="0.25" value="10">
+
+    <fieldset data-role="controlgroup" data-type="horizontal">
+        <div>Aire %:<input name="aire" type="text" value="NA"/></div>
+    </fieldset>  
+    
+        <label for="slider-10">Cilindros de Muestra:</label>
+        <input type="range" name="cilindros_muestra" id="idcilindros_muestra" min="0" max="10" step="1" value="1">
+        
+        <label for="slider-10">Muestras:</label>
+        <input type="range" name="muestras" id="idmuestras" min="0" max="20" step="1" value="1">
+        
+    <fieldset data-role="controlgroup" data-type="horizontal">
+        <legend>Limpieza de estructura:</legend>
+        <input type="radio" name="limpieza_estructura" id="limpieza_estructuraa" value="si" checked="checked">
+        <label for="limpieza_estructuraa">Si</label>
+        <input type="radio" name="limpieza_estructura" id="limpieza_estructurab" value="no">
+        <label for="limpieza_estructurab">No</label>
+    </fieldset>
+        <fieldset data-role="controlgroup" data-type="horizontal">
+        <div>Volumen Teorico:<input name="teorico" type="text" value="NA"/></div>
+    </fieldset> 
+        <fieldset data-role="controlgroup" data-type="horizontal">
+        <div>Volumen Real:<input name="real" type="text" value="NA"/></div>
+    </fieldset> 
+    <fieldset data-role="controlgroup" data-type="horizontal">
+        <label for="time-1">Start: data-clear-btn="false"</label>
+        <input type="time" data-clear-btn="false" name="start" id="idstart" value="">
+    </fieldset>
+        <fieldset data-role="controlgroup" data-type="horizontal">
+        <label for="time-1">Finish: data-clear-btn="false"</label>
+        <input type="time" data-clear-btn="false" name="finish" id="idfinish" value="">
+    </fieldset>
+    <fieldset data-role="controlgroup" data-type="horizontal">
+        <div>Duracion:<input name="duracion" type="text" value=""/></div>
+    </fieldset>      
+    <fieldset data-role="controlgroup" data-type="horizontal">
+        <legend>Segregacion:</legend>
+        <input type="radio" name="segregacion" id="segregaciona" value="si">
+        <label for="segregaciona">Si</label>
+        <input type="radio" name="segregacion" id="segregacionb" value="no" checked="checked">
+        <label for="segregacionb">No</label>
+    </fieldset> 
+    <fieldset data-role="controlgroup" data-type="horizontal">
+        <legend>Junta fria:</legend>
+        <input type="radio" name="junta_fria" id="junta_friaa" value="si" checked="checked">
+        <label for="junta_friaa">Si</label>
+        <input type="radio" name="junta_fria" id="junta_friab" value="no">
+        <label for="junta_friab">no</label>
+    </fieldset>
+{% endblock %}

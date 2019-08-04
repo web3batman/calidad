@@ -1,0 +1,67 @@
+{% extends 'forms/main_template.html' %}
+{% block title %}Curado{% endblock %}
+{% block content %}
+    <fieldset data-role="controlgroup" data-type="horizontal">
+        <legend>Metodo:</legend>
+        <input type="radio" name="metodo" id="metodoa" value="inmersion">
+        <label for="metodoa">Inmersion continua</label>
+        <input type="radio" name="metodo" id="metodob" value="recubrimiento">
+        <label for="metodob">Recubrimiento de superficie</label>
+        <input type="radio" name="metodo" id="metodoc" value="vapor">
+        <label for="metodoc">Curado por vapor</label>      
+        <input type="radio" name="metodo" id="metodod" value="aspersor" checked="checked">
+        <label for="metodod">Aspersor o rociamiento con agua</label>    
+        <input type="radio" name="metodo" id="metodoe" value="menbrana">
+        <label for="metodoe">Menbrana de curado</label>     
+    </fieldset> 
+    <fieldset data-role="controlgroup" data-type="horizontal">
+        <legend>Se aplico curado por 7 dias:</legend>
+        <input type="radio" name="q21" id="q21a" value="si" checked="checked">
+        <label for="q21a">Si</label>
+        <input type="radio" name="q21" id="q21b" value="no">
+        <label for="q21b">no</label>
+    </fieldset> 
+    <fieldset data-role="controlgroup" data-type="horizontal">
+        <legend>Se incio el curado con el encofrado puesto?:</legend>
+        <input type="radio" name="q22" id="q22a" value="si" checked="checked">
+        <label for="q22a">Si</label>
+        <input type="radio" name="q22" id="q22b" value="no">
+        <label for="q22b">no</label>
+    </fieldset> 
+    <fieldset data-role="controlgroup" data-type="horizontal">
+        <legend>Se aplico curador quimico?:</legend>
+        <input type="radio" name="q23" id="q23a" value="si" checked="checked">
+        <label for="q23a">Si</label>
+        <input type="radio" name="q23" id="q23b" value="no">
+        <label for="q23b">no</label>
+    </fieldset>
+    <fieldset data-role="controlgroup" data-type="horizontal">
+        <legend>Se aplico ambos metodos(agua,/quimico?:</legend>
+        <input type="radio" name="q24" id="q24a" value="si" checked="checked">
+        <label for="q24a">Si</label>
+        <input type="radio" name="q24" id="q24b" value="no">
+        <label for="q24b">no</label>
+    </fieldset>
+    <fieldset data-role="controlgroup" data-type="horizontal">
+        <legend>Se aplico inmediatamene despues del acabado:</legend>
+        <input type="radio" name="q25" id="q25a" value="si" checked="checked">
+        <label for="q25a">Si</label>
+        <input type="radio" name="q25" id="q25b" value="no">
+        <label for="q25b">no</label>
+    </fieldset>
+    <fieldset data-role="controlgroup" data-type="horizontal">
+        <legend>Se uso aspersor y rodillo:</legend>
+        <input type="radio" name="q26" id="q26a" value="si" checked="checked">
+        <label for="q26a">Si</label>
+        <input type="radio" name="q26" id="q26b" value="no">
+        <label for="q26b">no</label>
+    </fieldset>
+    <fieldset data-role="controlgroup" data-type="horizontal">
+        <legend>Se aplico conforme al ahoja tecnica del producto:</legend>
+        <input type="radio" name="q27" id="q27a" value="si" checked="checked">
+        <label for="q27a">Si</label>
+        <input type="radio" name="q27" id="q27b" value="no">
+        <label for="q27b">no</label>
+    </fieldset>
+    <div>Plano/Esquema:<input name="esquema" type="text" value=""/></div>
+{% endblock %}

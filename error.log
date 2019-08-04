@@ -1,0 +1,2297 @@
+2019-07-27 14:47:42,533 INFO: errors [in C:/Users/evillasante/Downloads/AMP-Tech-master3/Herokuapp/app.py:268]
+2019-07-27 16:09:10,004 INFO: errors [in C:/Users/evillasante/Downloads/AMP-Tech-master3/Herokuapp/app.py:268]
+2019-07-27 16:09:10,004 INFO: errors [in C:/Users/evillasante/Downloads/AMP-Tech-master3/Herokuapp/app.py:268]
+2019-07-27 16:09:18,277 ERROR: Exception on / [GET] [in C:\Users\evillasante\Anaconda3\lib\site-packages\flask\app.py:1761]
+Traceback (most recent call last):
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\flask\app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\flask\app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\flask\app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\flask\_compat.py", line 35, in reraise
+    raise value
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\flask\app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:/Users/evillasante/Downloads/AMP-Tech-master3/Herokuapp/app.py", line 56, in home
+    disc = gd.items_folder(service,'Formatos_Calidad')
+  File "C:\Users\evillasante\Downloads\AMP-Tech-master3\Herokuapp\googledrive.py", line 31, in items_folder
+    result = [service.files().get(fileId=x['id'] ).execute() for x in result]
+  File "C:\Users\evillasante\Downloads\AMP-Tech-master3\Herokuapp\googledrive.py", line 31, in <listcomp>
+    result = [service.files().get(fileId=x['id'] ).execute() for x in result]
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\googleapiclient\_helpers.py", line 130, in positional_wrapper
+    return wrapped(*args, **kwargs)
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\googleapiclient\http.py", line 846, in execute
+    method=str(self.method), body=self.body, headers=self.headers)
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\googleapiclient\http.py", line 183, in _retry_request
+    raise exception
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\googleapiclient\http.py", line 164, in _retry_request
+    resp, content = http.request(uri, method, *args, **kwargs)
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\oauth2client\transport.py", line 175, in new_request
+    redirections, connection_type)
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\oauth2client\transport.py", line 282, in request
+    connection_type=connection_type)
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\httplib2\__init__.py", line 1953, in request
+    cachekey,
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\httplib2\__init__.py", line 1618, in _request
+    conn, request_uri, method, body, headers
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\httplib2\__init__.py", line 1556, in _conn_request
+    response = conn.getresponse()
+  File "C:\Users\evillasante\Anaconda3\lib\http\client.py", line 1321, in getresponse
+    response.begin()
+  File "C:\Users\evillasante\Anaconda3\lib\http\client.py", line 296, in begin
+    version, status, reason = self._read_status()
+  File "C:\Users\evillasante\Anaconda3\lib\http\client.py", line 257, in _read_status
+    line = str(self.fp.readline(_MAXLINE + 1), "iso-8859-1")
+  File "C:\Users\evillasante\Anaconda3\lib\socket.py", line 589, in readinto
+    return self._sock.recv_into(b)
+  File "C:\Users\evillasante\Anaconda3\lib\ssl.py", line 1052, in recv_into
+    return self.read(nbytes, buffer)
+  File "C:\Users\evillasante\Anaconda3\lib\ssl.py", line 911, in read
+    return self._sslobj.read(len, buffer)
+ssl.SSLError: [SSL: WRONG_VERSION_NUMBER] wrong version number (_ssl.c:2488)
+2019-07-27 16:09:18,277 ERROR: Exception on / [GET] [in C:\Users\evillasante\Anaconda3\lib\site-packages\flask\app.py:1761]
+Traceback (most recent call last):
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\flask\app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\flask\app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\flask\app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\flask\_compat.py", line 35, in reraise
+    raise value
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\flask\app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:/Users/evillasante/Downloads/AMP-Tech-master3/Herokuapp/app.py", line 56, in home
+    disc = gd.items_folder(service,'Formatos_Calidad')
+  File "C:\Users\evillasante\Downloads\AMP-Tech-master3\Herokuapp\googledrive.py", line 31, in items_folder
+    result = [service.files().get(fileId=x['id'] ).execute() for x in result]
+  File "C:\Users\evillasante\Downloads\AMP-Tech-master3\Herokuapp\googledrive.py", line 31, in <listcomp>
+    result = [service.files().get(fileId=x['id'] ).execute() for x in result]
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\googleapiclient\_helpers.py", line 130, in positional_wrapper
+    return wrapped(*args, **kwargs)
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\googleapiclient\http.py", line 846, in execute
+    method=str(self.method), body=self.body, headers=self.headers)
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\googleapiclient\http.py", line 183, in _retry_request
+    raise exception
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\googleapiclient\http.py", line 164, in _retry_request
+    resp, content = http.request(uri, method, *args, **kwargs)
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\oauth2client\transport.py", line 175, in new_request
+    redirections, connection_type)
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\oauth2client\transport.py", line 282, in request
+    connection_type=connection_type)
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\httplib2\__init__.py", line 1953, in request
+    cachekey,
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\httplib2\__init__.py", line 1618, in _request
+    conn, request_uri, method, body, headers
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\httplib2\__init__.py", line 1556, in _conn_request
+    response = conn.getresponse()
+  File "C:\Users\evillasante\Anaconda3\lib\http\client.py", line 1321, in getresponse
+    response.begin()
+  File "C:\Users\evillasante\Anaconda3\lib\http\client.py", line 296, in begin
+    version, status, reason = self._read_status()
+  File "C:\Users\evillasante\Anaconda3\lib\http\client.py", line 257, in _read_status
+    line = str(self.fp.readline(_MAXLINE + 1), "iso-8859-1")
+  File "C:\Users\evillasante\Anaconda3\lib\socket.py", line 589, in readinto
+    return self._sock.recv_into(b)
+  File "C:\Users\evillasante\Anaconda3\lib\ssl.py", line 1052, in recv_into
+    return self.read(nbytes, buffer)
+  File "C:\Users\evillasante\Anaconda3\lib\ssl.py", line 911, in read
+    return self._sslobj.read(len, buffer)
+ssl.SSLError: [SSL: WRONG_VERSION_NUMBER] wrong version number (_ssl.c:2488)
+2019-07-27 16:09:18,279 ERROR: Exception on / [GET] [in C:\Users\evillasante\Anaconda3\lib\site-packages\flask\app.py:1761]
+Traceback (most recent call last):
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\flask\app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\flask\app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\flask\app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\flask\_compat.py", line 35, in reraise
+    raise value
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\flask\app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:/Users/evillasante/Downloads/AMP-Tech-master3/Herokuapp/app.py", line 56, in home
+    disc = gd.items_folder(service,'Formatos_Calidad')
+  File "C:\Users\evillasante\Downloads\AMP-Tech-master3\Herokuapp\googledrive.py", line 19, in items_folder
+    f_id = service.files().list(q=query,pageToken=None).execute()['items'][0]['id']
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\googleapiclient\_helpers.py", line 130, in positional_wrapper
+    return wrapped(*args, **kwargs)
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\googleapiclient\http.py", line 846, in execute
+    method=str(self.method), body=self.body, headers=self.headers)
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\googleapiclient\http.py", line 183, in _retry_request
+    raise exception
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\googleapiclient\http.py", line 164, in _retry_request
+    resp, content = http.request(uri, method, *args, **kwargs)
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\oauth2client\transport.py", line 175, in new_request
+    redirections, connection_type)
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\oauth2client\transport.py", line 282, in request
+    connection_type=connection_type)
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\httplib2\__init__.py", line 1953, in request
+    cachekey,
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\httplib2\__init__.py", line 1618, in _request
+    conn, request_uri, method, body, headers
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\httplib2\__init__.py", line 1556, in _conn_request
+    response = conn.getresponse()
+  File "C:\Users\evillasante\Anaconda3\lib\http\client.py", line 1321, in getresponse
+    response.begin()
+  File "C:\Users\evillasante\Anaconda3\lib\http\client.py", line 296, in begin
+    version, status, reason = self._read_status()
+  File "C:\Users\evillasante\Anaconda3\lib\http\client.py", line 257, in _read_status
+    line = str(self.fp.readline(_MAXLINE + 1), "iso-8859-1")
+  File "C:\Users\evillasante\Anaconda3\lib\socket.py", line 589, in readinto
+    return self._sock.recv_into(b)
+  File "C:\Users\evillasante\Anaconda3\lib\ssl.py", line 1052, in recv_into
+    return self.read(nbytes, buffer)
+  File "C:\Users\evillasante\Anaconda3\lib\ssl.py", line 911, in read
+    return self._sslobj.read(len, buffer)
+ssl.SSLError: [SSL: WRONG_VERSION_NUMBER] wrong version number (_ssl.c:2488)
+2019-07-27 16:09:18,279 ERROR: Exception on / [GET] [in C:\Users\evillasante\Anaconda3\lib\site-packages\flask\app.py:1761]
+Traceback (most recent call last):
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\flask\app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\flask\app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\flask\app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\flask\_compat.py", line 35, in reraise
+    raise value
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\flask\app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:/Users/evillasante/Downloads/AMP-Tech-master3/Herokuapp/app.py", line 56, in home
+    disc = gd.items_folder(service,'Formatos_Calidad')
+  File "C:\Users\evillasante\Downloads\AMP-Tech-master3\Herokuapp\googledrive.py", line 19, in items_folder
+    f_id = service.files().list(q=query,pageToken=None).execute()['items'][0]['id']
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\googleapiclient\_helpers.py", line 130, in positional_wrapper
+    return wrapped(*args, **kwargs)
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\googleapiclient\http.py", line 846, in execute
+    method=str(self.method), body=self.body, headers=self.headers)
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\googleapiclient\http.py", line 183, in _retry_request
+    raise exception
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\googleapiclient\http.py", line 164, in _retry_request
+    resp, content = http.request(uri, method, *args, **kwargs)
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\oauth2client\transport.py", line 175, in new_request
+    redirections, connection_type)
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\oauth2client\transport.py", line 282, in request
+    connection_type=connection_type)
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\httplib2\__init__.py", line 1953, in request
+    cachekey,
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\httplib2\__init__.py", line 1618, in _request
+    conn, request_uri, method, body, headers
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\httplib2\__init__.py", line 1556, in _conn_request
+    response = conn.getresponse()
+  File "C:\Users\evillasante\Anaconda3\lib\http\client.py", line 1321, in getresponse
+    response.begin()
+  File "C:\Users\evillasante\Anaconda3\lib\http\client.py", line 296, in begin
+    version, status, reason = self._read_status()
+  File "C:\Users\evillasante\Anaconda3\lib\http\client.py", line 257, in _read_status
+    line = str(self.fp.readline(_MAXLINE + 1), "iso-8859-1")
+  File "C:\Users\evillasante\Anaconda3\lib\socket.py", line 589, in readinto
+    return self._sock.recv_into(b)
+  File "C:\Users\evillasante\Anaconda3\lib\ssl.py", line 1052, in recv_into
+    return self.read(nbytes, buffer)
+  File "C:\Users\evillasante\Anaconda3\lib\ssl.py", line 911, in read
+    return self._sslobj.read(len, buffer)
+ssl.SSLError: [SSL: WRONG_VERSION_NUMBER] wrong version number (_ssl.c:2488)
+2019-07-27 16:18:18,215 ERROR: Exception on / [GET] [in C:\Users\evillasante\Anaconda3\lib\site-packages\flask\app.py:1761]
+Traceback (most recent call last):
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\flask\app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\flask\app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\flask\app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\flask\_compat.py", line 35, in reraise
+    raise value
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\flask\app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:/Users/evillasante/Downloads/AMP-Tech-master3/Herokuapp/app.py", line 56, in home
+    disc = gd.items_folder(service,'Formatos_Calidad')
+  File "C:\Users\evillasante\Downloads\AMP-Tech-master3\Herokuapp\googledrive.py", line 19, in items_folder
+    f_id = service.files().list(q=query,pageToken=None).execute()['items'][0]['id']
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\googleapiclient\_helpers.py", line 130, in positional_wrapper
+    return wrapped(*args, **kwargs)
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\googleapiclient\http.py", line 846, in execute
+    method=str(self.method), body=self.body, headers=self.headers)
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\googleapiclient\http.py", line 183, in _retry_request
+    raise exception
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\googleapiclient\http.py", line 164, in _retry_request
+    resp, content = http.request(uri, method, *args, **kwargs)
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\oauth2client\transport.py", line 175, in new_request
+    redirections, connection_type)
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\oauth2client\transport.py", line 282, in request
+    connection_type=connection_type)
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\httplib2\__init__.py", line 1953, in request
+    cachekey,
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\httplib2\__init__.py", line 1618, in _request
+    conn, request_uri, method, body, headers
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\httplib2\__init__.py", line 1556, in _conn_request
+    response = conn.getresponse()
+  File "C:\Users\evillasante\Anaconda3\lib\http\client.py", line 1321, in getresponse
+    response.begin()
+  File "C:\Users\evillasante\Anaconda3\lib\http\client.py", line 296, in begin
+    version, status, reason = self._read_status()
+  File "C:\Users\evillasante\Anaconda3\lib\http\client.py", line 257, in _read_status
+    line = str(self.fp.readline(_MAXLINE + 1), "iso-8859-1")
+  File "C:\Users\evillasante\Anaconda3\lib\socket.py", line 589, in readinto
+    return self._sock.recv_into(b)
+  File "C:\Users\evillasante\Anaconda3\lib\ssl.py", line 1052, in recv_into
+    return self.read(nbytes, buffer)
+  File "C:\Users\evillasante\Anaconda3\lib\ssl.py", line 911, in read
+    return self._sslobj.read(len, buffer)
+ssl.SSLError: [SSL: WRONG_VERSION_NUMBER] wrong version number (_ssl.c:2488)
+2019-07-27 16:18:18,215 ERROR: Exception on / [GET] [in C:\Users\evillasante\Anaconda3\lib\site-packages\flask\app.py:1761]
+Traceback (most recent call last):
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\flask\app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\flask\app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\flask\app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\flask\_compat.py", line 35, in reraise
+    raise value
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\flask\app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:/Users/evillasante/Downloads/AMP-Tech-master3/Herokuapp/app.py", line 56, in home
+    disc = gd.items_folder(service,'Formatos_Calidad')
+  File "C:\Users\evillasante\Downloads\AMP-Tech-master3\Herokuapp\googledrive.py", line 19, in items_folder
+    f_id = service.files().list(q=query,pageToken=None).execute()['items'][0]['id']
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\googleapiclient\_helpers.py", line 130, in positional_wrapper
+    return wrapped(*args, **kwargs)
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\googleapiclient\http.py", line 846, in execute
+    method=str(self.method), body=self.body, headers=self.headers)
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\googleapiclient\http.py", line 183, in _retry_request
+    raise exception
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\googleapiclient\http.py", line 164, in _retry_request
+    resp, content = http.request(uri, method, *args, **kwargs)
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\oauth2client\transport.py", line 175, in new_request
+    redirections, connection_type)
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\oauth2client\transport.py", line 282, in request
+    connection_type=connection_type)
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\httplib2\__init__.py", line 1953, in request
+    cachekey,
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\httplib2\__init__.py", line 1618, in _request
+    conn, request_uri, method, body, headers
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\httplib2\__init__.py", line 1556, in _conn_request
+    response = conn.getresponse()
+  File "C:\Users\evillasante\Anaconda3\lib\http\client.py", line 1321, in getresponse
+    response.begin()
+  File "C:\Users\evillasante\Anaconda3\lib\http\client.py", line 296, in begin
+    version, status, reason = self._read_status()
+  File "C:\Users\evillasante\Anaconda3\lib\http\client.py", line 257, in _read_status
+    line = str(self.fp.readline(_MAXLINE + 1), "iso-8859-1")
+  File "C:\Users\evillasante\Anaconda3\lib\socket.py", line 589, in readinto
+    return self._sock.recv_into(b)
+  File "C:\Users\evillasante\Anaconda3\lib\ssl.py", line 1052, in recv_into
+    return self.read(nbytes, buffer)
+  File "C:\Users\evillasante\Anaconda3\lib\ssl.py", line 911, in read
+    return self._sslobj.read(len, buffer)
+ssl.SSLError: [SSL: WRONG_VERSION_NUMBER] wrong version number (_ssl.c:2488)
+2019-07-27 16:18:18,215 ERROR: Exception on / [GET] [in C:\Users\evillasante\Anaconda3\lib\site-packages\flask\app.py:1761]
+Traceback (most recent call last):
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\flask\app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\flask\app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\flask\app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\flask\_compat.py", line 35, in reraise
+    raise value
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\flask\app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:/Users/evillasante/Downloads/AMP-Tech-master3/Herokuapp/app.py", line 56, in home
+    disc = gd.items_folder(service,'Formatos_Calidad')
+  File "C:\Users\evillasante\Downloads\AMP-Tech-master3\Herokuapp\googledrive.py", line 31, in items_folder
+    result = [service.files().get(fileId=x['id'] ).execute() for x in result]
+  File "C:\Users\evillasante\Downloads\AMP-Tech-master3\Herokuapp\googledrive.py", line 31, in <listcomp>
+    result = [service.files().get(fileId=x['id'] ).execute() for x in result]
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\googleapiclient\_helpers.py", line 130, in positional_wrapper
+    return wrapped(*args, **kwargs)
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\googleapiclient\http.py", line 846, in execute
+    method=str(self.method), body=self.body, headers=self.headers)
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\googleapiclient\http.py", line 183, in _retry_request
+    raise exception
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\googleapiclient\http.py", line 164, in _retry_request
+    resp, content = http.request(uri, method, *args, **kwargs)
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\oauth2client\transport.py", line 175, in new_request
+    redirections, connection_type)
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\oauth2client\transport.py", line 282, in request
+    connection_type=connection_type)
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\httplib2\__init__.py", line 1953, in request
+    cachekey,
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\httplib2\__init__.py", line 1618, in _request
+    conn, request_uri, method, body, headers
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\httplib2\__init__.py", line 1556, in _conn_request
+    response = conn.getresponse()
+  File "C:\Users\evillasante\Anaconda3\lib\http\client.py", line 1321, in getresponse
+    response.begin()
+  File "C:\Users\evillasante\Anaconda3\lib\http\client.py", line 296, in begin
+    version, status, reason = self._read_status()
+  File "C:\Users\evillasante\Anaconda3\lib\http\client.py", line 257, in _read_status
+    line = str(self.fp.readline(_MAXLINE + 1), "iso-8859-1")
+  File "C:\Users\evillasante\Anaconda3\lib\socket.py", line 589, in readinto
+    return self._sock.recv_into(b)
+  File "C:\Users\evillasante\Anaconda3\lib\ssl.py", line 1052, in recv_into
+    return self.read(nbytes, buffer)
+  File "C:\Users\evillasante\Anaconda3\lib\ssl.py", line 911, in read
+    return self._sslobj.read(len, buffer)
+ssl.SSLError: [SSL: WRONG_VERSION_NUMBER] wrong version number (_ssl.c:2488)
+2019-07-27 16:18:18,215 ERROR: Exception on / [GET] [in C:\Users\evillasante\Anaconda3\lib\site-packages\flask\app.py:1761]
+Traceback (most recent call last):
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\flask\app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\flask\app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\flask\app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\flask\_compat.py", line 35, in reraise
+    raise value
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\flask\app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:/Users/evillasante/Downloads/AMP-Tech-master3/Herokuapp/app.py", line 56, in home
+    disc = gd.items_folder(service,'Formatos_Calidad')
+  File "C:\Users\evillasante\Downloads\AMP-Tech-master3\Herokuapp\googledrive.py", line 31, in items_folder
+    result = [service.files().get(fileId=x['id'] ).execute() for x in result]
+  File "C:\Users\evillasante\Downloads\AMP-Tech-master3\Herokuapp\googledrive.py", line 31, in <listcomp>
+    result = [service.files().get(fileId=x['id'] ).execute() for x in result]
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\googleapiclient\_helpers.py", line 130, in positional_wrapper
+    return wrapped(*args, **kwargs)
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\googleapiclient\http.py", line 846, in execute
+    method=str(self.method), body=self.body, headers=self.headers)
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\googleapiclient\http.py", line 183, in _retry_request
+    raise exception
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\googleapiclient\http.py", line 164, in _retry_request
+    resp, content = http.request(uri, method, *args, **kwargs)
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\oauth2client\transport.py", line 175, in new_request
+    redirections, connection_type)
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\oauth2client\transport.py", line 282, in request
+    connection_type=connection_type)
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\httplib2\__init__.py", line 1953, in request
+    cachekey,
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\httplib2\__init__.py", line 1618, in _request
+    conn, request_uri, method, body, headers
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\httplib2\__init__.py", line 1556, in _conn_request
+    response = conn.getresponse()
+  File "C:\Users\evillasante\Anaconda3\lib\http\client.py", line 1321, in getresponse
+    response.begin()
+  File "C:\Users\evillasante\Anaconda3\lib\http\client.py", line 296, in begin
+    version, status, reason = self._read_status()
+  File "C:\Users\evillasante\Anaconda3\lib\http\client.py", line 257, in _read_status
+    line = str(self.fp.readline(_MAXLINE + 1), "iso-8859-1")
+  File "C:\Users\evillasante\Anaconda3\lib\socket.py", line 589, in readinto
+    return self._sock.recv_into(b)
+  File "C:\Users\evillasante\Anaconda3\lib\ssl.py", line 1052, in recv_into
+    return self.read(nbytes, buffer)
+  File "C:\Users\evillasante\Anaconda3\lib\ssl.py", line 911, in read
+    return self._sslobj.read(len, buffer)
+ssl.SSLError: [SSL: WRONG_VERSION_NUMBER] wrong version number (_ssl.c:2488)
+2019-07-27 16:25:01,402 ERROR: Exception on / [GET] [in C:\Users\evillasante\Anaconda3\lib\site-packages\flask\app.py:1761]
+Traceback (most recent call last):
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\flask\app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\flask\app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\flask\app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\flask\_compat.py", line 35, in reraise
+    raise value
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\flask\app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:/Users/evillasante/Downloads/AMP-Tech-master3/Herokuapp/app.py", line 56, in home
+    disc = gd.items_folder(service,'Formatos_Calidad')
+  File "C:\Users\evillasante\Downloads\AMP-Tech-master3\Herokuapp\googledrive.py", line 19, in items_folder
+    f_id = service.files().list(q=query,pageToken=None).execute()['items'][0]['id']
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\googleapiclient\_helpers.py", line 130, in positional_wrapper
+    return wrapped(*args, **kwargs)
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\googleapiclient\http.py", line 846, in execute
+    method=str(self.method), body=self.body, headers=self.headers)
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\googleapiclient\http.py", line 183, in _retry_request
+    raise exception
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\googleapiclient\http.py", line 164, in _retry_request
+    resp, content = http.request(uri, method, *args, **kwargs)
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\oauth2client\transport.py", line 175, in new_request
+    redirections, connection_type)
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\oauth2client\transport.py", line 282, in request
+    connection_type=connection_type)
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\httplib2\__init__.py", line 1953, in request
+    cachekey,
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\httplib2\__init__.py", line 1618, in _request
+    conn, request_uri, method, body, headers
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\httplib2\__init__.py", line 1556, in _conn_request
+    response = conn.getresponse()
+  File "C:\Users\evillasante\Anaconda3\lib\http\client.py", line 1321, in getresponse
+    response.begin()
+  File "C:\Users\evillasante\Anaconda3\lib\http\client.py", line 296, in begin
+    version, status, reason = self._read_status()
+  File "C:\Users\evillasante\Anaconda3\lib\http\client.py", line 257, in _read_status
+    line = str(self.fp.readline(_MAXLINE + 1), "iso-8859-1")
+  File "C:\Users\evillasante\Anaconda3\lib\socket.py", line 589, in readinto
+    return self._sock.recv_into(b)
+  File "C:\Users\evillasante\Anaconda3\lib\ssl.py", line 1052, in recv_into
+    return self.read(nbytes, buffer)
+  File "C:\Users\evillasante\Anaconda3\lib\ssl.py", line 911, in read
+    return self._sslobj.read(len, buffer)
+ssl.SSLError: [SSL: WRONG_VERSION_NUMBER] wrong version number (_ssl.c:2488)
+2019-07-27 16:25:01,402 ERROR: Exception on / [GET] [in C:\Users\evillasante\Anaconda3\lib\site-packages\flask\app.py:1761]
+Traceback (most recent call last):
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\flask\app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\flask\app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\flask\app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\flask\_compat.py", line 35, in reraise
+    raise value
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\flask\app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:/Users/evillasante/Downloads/AMP-Tech-master3/Herokuapp/app.py", line 56, in home
+    disc = gd.items_folder(service,'Formatos_Calidad')
+  File "C:\Users\evillasante\Downloads\AMP-Tech-master3\Herokuapp\googledrive.py", line 19, in items_folder
+    f_id = service.files().list(q=query,pageToken=None).execute()['items'][0]['id']
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\googleapiclient\_helpers.py", line 130, in positional_wrapper
+    return wrapped(*args, **kwargs)
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\googleapiclient\http.py", line 846, in execute
+    method=str(self.method), body=self.body, headers=self.headers)
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\googleapiclient\http.py", line 183, in _retry_request
+    raise exception
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\googleapiclient\http.py", line 164, in _retry_request
+    resp, content = http.request(uri, method, *args, **kwargs)
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\oauth2client\transport.py", line 175, in new_request
+    redirections, connection_type)
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\oauth2client\transport.py", line 282, in request
+    connection_type=connection_type)
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\httplib2\__init__.py", line 1953, in request
+    cachekey,
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\httplib2\__init__.py", line 1618, in _request
+    conn, request_uri, method, body, headers
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\httplib2\__init__.py", line 1556, in _conn_request
+    response = conn.getresponse()
+  File "C:\Users\evillasante\Anaconda3\lib\http\client.py", line 1321, in getresponse
+    response.begin()
+  File "C:\Users\evillasante\Anaconda3\lib\http\client.py", line 296, in begin
+    version, status, reason = self._read_status()
+  File "C:\Users\evillasante\Anaconda3\lib\http\client.py", line 257, in _read_status
+    line = str(self.fp.readline(_MAXLINE + 1), "iso-8859-1")
+  File "C:\Users\evillasante\Anaconda3\lib\socket.py", line 589, in readinto
+    return self._sock.recv_into(b)
+  File "C:\Users\evillasante\Anaconda3\lib\ssl.py", line 1052, in recv_into
+    return self.read(nbytes, buffer)
+  File "C:\Users\evillasante\Anaconda3\lib\ssl.py", line 911, in read
+    return self._sslobj.read(len, buffer)
+ssl.SSLError: [SSL: WRONG_VERSION_NUMBER] wrong version number (_ssl.c:2488)
+2019-07-27 16:25:01,403 ERROR: Exception on / [GET] [in C:\Users\evillasante\Anaconda3\lib\site-packages\flask\app.py:1761]
+Traceback (most recent call last):
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\flask\app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\flask\app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\flask\app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\flask\_compat.py", line 35, in reraise
+    raise value
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\flask\app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:/Users/evillasante/Downloads/AMP-Tech-master3/Herokuapp/app.py", line 56, in home
+    disc = gd.items_folder(service,'Formatos_Calidad')
+  File "C:\Users\evillasante\Downloads\AMP-Tech-master3\Herokuapp\googledrive.py", line 31, in items_folder
+    result = [service.files().get(fileId=x['id'] ).execute() for x in result]
+  File "C:\Users\evillasante\Downloads\AMP-Tech-master3\Herokuapp\googledrive.py", line 31, in <listcomp>
+    result = [service.files().get(fileId=x['id'] ).execute() for x in result]
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\googleapiclient\_helpers.py", line 130, in positional_wrapper
+    return wrapped(*args, **kwargs)
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\googleapiclient\http.py", line 846, in execute
+    method=str(self.method), body=self.body, headers=self.headers)
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\googleapiclient\http.py", line 183, in _retry_request
+    raise exception
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\googleapiclient\http.py", line 164, in _retry_request
+    resp, content = http.request(uri, method, *args, **kwargs)
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\oauth2client\transport.py", line 175, in new_request
+    redirections, connection_type)
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\oauth2client\transport.py", line 282, in request
+    connection_type=connection_type)
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\httplib2\__init__.py", line 1953, in request
+    cachekey,
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\httplib2\__init__.py", line 1618, in _request
+    conn, request_uri, method, body, headers
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\httplib2\__init__.py", line 1556, in _conn_request
+    response = conn.getresponse()
+  File "C:\Users\evillasante\Anaconda3\lib\http\client.py", line 1321, in getresponse
+    response.begin()
+  File "C:\Users\evillasante\Anaconda3\lib\http\client.py", line 296, in begin
+    version, status, reason = self._read_status()
+  File "C:\Users\evillasante\Anaconda3\lib\http\client.py", line 257, in _read_status
+    line = str(self.fp.readline(_MAXLINE + 1), "iso-8859-1")
+  File "C:\Users\evillasante\Anaconda3\lib\socket.py", line 589, in readinto
+    return self._sock.recv_into(b)
+  File "C:\Users\evillasante\Anaconda3\lib\ssl.py", line 1052, in recv_into
+    return self.read(nbytes, buffer)
+  File "C:\Users\evillasante\Anaconda3\lib\ssl.py", line 911, in read
+    return self._sslobj.read(len, buffer)
+ssl.SSLError: [SSL: WRONG_VERSION_NUMBER] wrong version number (_ssl.c:2488)
+2019-07-27 16:25:01,403 ERROR: Exception on / [GET] [in C:\Users\evillasante\Anaconda3\lib\site-packages\flask\app.py:1761]
+Traceback (most recent call last):
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\flask\app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\flask\app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\flask\app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\flask\_compat.py", line 35, in reraise
+    raise value
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\flask\app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:/Users/evillasante/Downloads/AMP-Tech-master3/Herokuapp/app.py", line 56, in home
+    disc = gd.items_folder(service,'Formatos_Calidad')
+  File "C:\Users\evillasante\Downloads\AMP-Tech-master3\Herokuapp\googledrive.py", line 31, in items_folder
+    result = [service.files().get(fileId=x['id'] ).execute() for x in result]
+  File "C:\Users\evillasante\Downloads\AMP-Tech-master3\Herokuapp\googledrive.py", line 31, in <listcomp>
+    result = [service.files().get(fileId=x['id'] ).execute() for x in result]
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\googleapiclient\_helpers.py", line 130, in positional_wrapper
+    return wrapped(*args, **kwargs)
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\googleapiclient\http.py", line 846, in execute
+    method=str(self.method), body=self.body, headers=self.headers)
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\googleapiclient\http.py", line 183, in _retry_request
+    raise exception
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\googleapiclient\http.py", line 164, in _retry_request
+    resp, content = http.request(uri, method, *args, **kwargs)
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\oauth2client\transport.py", line 175, in new_request
+    redirections, connection_type)
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\oauth2client\transport.py", line 282, in request
+    connection_type=connection_type)
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\httplib2\__init__.py", line 1953, in request
+    cachekey,
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\httplib2\__init__.py", line 1618, in _request
+    conn, request_uri, method, body, headers
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\httplib2\__init__.py", line 1556, in _conn_request
+    response = conn.getresponse()
+  File "C:\Users\evillasante\Anaconda3\lib\http\client.py", line 1321, in getresponse
+    response.begin()
+  File "C:\Users\evillasante\Anaconda3\lib\http\client.py", line 296, in begin
+    version, status, reason = self._read_status()
+  File "C:\Users\evillasante\Anaconda3\lib\http\client.py", line 257, in _read_status
+    line = str(self.fp.readline(_MAXLINE + 1), "iso-8859-1")
+  File "C:\Users\evillasante\Anaconda3\lib\socket.py", line 589, in readinto
+    return self._sock.recv_into(b)
+  File "C:\Users\evillasante\Anaconda3\lib\ssl.py", line 1052, in recv_into
+    return self.read(nbytes, buffer)
+  File "C:\Users\evillasante\Anaconda3\lib\ssl.py", line 911, in read
+    return self._sslobj.read(len, buffer)
+ssl.SSLError: [SSL: WRONG_VERSION_NUMBER] wrong version number (_ssl.c:2488)
+2019-07-27 16:28:21,298 ERROR: Exception on / [GET] [in C:\Users\evillasante\Anaconda3\lib\site-packages\flask\app.py:1761]
+Traceback (most recent call last):
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\flask\app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\flask\app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\flask\app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\flask\_compat.py", line 35, in reraise
+    raise value
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\flask\app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:/Users/evillasante/Downloads/AMP-Tech-master3/Herokuapp/app.py", line 56, in home
+    disc = gd.items_folder(service,'Formatos_Calidad')
+  File "C:\Users\evillasante\Downloads\AMP-Tech-master3\Herokuapp\googledrive.py", line 19, in items_folder
+    f_id = service.files().list(q=query,pageToken=None).execute()['items'][0]['id']
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\googleapiclient\_helpers.py", line 130, in positional_wrapper
+    return wrapped(*args, **kwargs)
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\googleapiclient\http.py", line 846, in execute
+    method=str(self.method), body=self.body, headers=self.headers)
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\googleapiclient\http.py", line 183, in _retry_request
+    raise exception
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\googleapiclient\http.py", line 164, in _retry_request
+    resp, content = http.request(uri, method, *args, **kwargs)
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\oauth2client\transport.py", line 175, in new_request
+    redirections, connection_type)
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\oauth2client\transport.py", line 282, in request
+    connection_type=connection_type)
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\httplib2\__init__.py", line 1953, in request
+    cachekey,
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\httplib2\__init__.py", line 1618, in _request
+    conn, request_uri, method, body, headers
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\httplib2\__init__.py", line 1556, in _conn_request
+    response = conn.getresponse()
+  File "C:\Users\evillasante\Anaconda3\lib\http\client.py", line 1321, in getresponse
+    response.begin()
+  File "C:\Users\evillasante\Anaconda3\lib\http\client.py", line 296, in begin
+    version, status, reason = self._read_status()
+  File "C:\Users\evillasante\Anaconda3\lib\http\client.py", line 257, in _read_status
+    line = str(self.fp.readline(_MAXLINE + 1), "iso-8859-1")
+  File "C:\Users\evillasante\Anaconda3\lib\socket.py", line 589, in readinto
+    return self._sock.recv_into(b)
+  File "C:\Users\evillasante\Anaconda3\lib\ssl.py", line 1052, in recv_into
+    return self.read(nbytes, buffer)
+  File "C:\Users\evillasante\Anaconda3\lib\ssl.py", line 911, in read
+    return self._sslobj.read(len, buffer)
+ssl.SSLError: [SSL: WRONG_VERSION_NUMBER] wrong version number (_ssl.c:2488)
+2019-07-27 16:28:21,298 ERROR: Exception on / [GET] [in C:\Users\evillasante\Anaconda3\lib\site-packages\flask\app.py:1761]
+Traceback (most recent call last):
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\flask\app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\flask\app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\flask\app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\flask\_compat.py", line 35, in reraise
+    raise value
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\flask\app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:/Users/evillasante/Downloads/AMP-Tech-master3/Herokuapp/app.py", line 56, in home
+    disc = gd.items_folder(service,'Formatos_Calidad')
+  File "C:\Users\evillasante\Downloads\AMP-Tech-master3\Herokuapp\googledrive.py", line 19, in items_folder
+    f_id = service.files().list(q=query,pageToken=None).execute()['items'][0]['id']
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\googleapiclient\_helpers.py", line 130, in positional_wrapper
+    return wrapped(*args, **kwargs)
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\googleapiclient\http.py", line 846, in execute
+    method=str(self.method), body=self.body, headers=self.headers)
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\googleapiclient\http.py", line 183, in _retry_request
+    raise exception
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\googleapiclient\http.py", line 164, in _retry_request
+    resp, content = http.request(uri, method, *args, **kwargs)
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\oauth2client\transport.py", line 175, in new_request
+    redirections, connection_type)
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\oauth2client\transport.py", line 282, in request
+    connection_type=connection_type)
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\httplib2\__init__.py", line 1953, in request
+    cachekey,
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\httplib2\__init__.py", line 1618, in _request
+    conn, request_uri, method, body, headers
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\httplib2\__init__.py", line 1556, in _conn_request
+    response = conn.getresponse()
+  File "C:\Users\evillasante\Anaconda3\lib\http\client.py", line 1321, in getresponse
+    response.begin()
+  File "C:\Users\evillasante\Anaconda3\lib\http\client.py", line 296, in begin
+    version, status, reason = self._read_status()
+  File "C:\Users\evillasante\Anaconda3\lib\http\client.py", line 257, in _read_status
+    line = str(self.fp.readline(_MAXLINE + 1), "iso-8859-1")
+  File "C:\Users\evillasante\Anaconda3\lib\socket.py", line 589, in readinto
+    return self._sock.recv_into(b)
+  File "C:\Users\evillasante\Anaconda3\lib\ssl.py", line 1052, in recv_into
+    return self.read(nbytes, buffer)
+  File "C:\Users\evillasante\Anaconda3\lib\ssl.py", line 911, in read
+    return self._sslobj.read(len, buffer)
+ssl.SSLError: [SSL: WRONG_VERSION_NUMBER] wrong version number (_ssl.c:2488)
+2019-07-27 16:28:21,299 ERROR: Exception on / [GET] [in C:\Users\evillasante\Anaconda3\lib\site-packages\flask\app.py:1761]
+Traceback (most recent call last):
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\flask\app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\flask\app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\flask\app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\flask\_compat.py", line 35, in reraise
+    raise value
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\flask\app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:/Users/evillasante/Downloads/AMP-Tech-master3/Herokuapp/app.py", line 56, in home
+    disc = gd.items_folder(service,'Formatos_Calidad')
+  File "C:\Users\evillasante\Downloads\AMP-Tech-master3\Herokuapp\googledrive.py", line 31, in items_folder
+    result = [service.files().get(fileId=x['id'] ).execute() for x in result]
+  File "C:\Users\evillasante\Downloads\AMP-Tech-master3\Herokuapp\googledrive.py", line 31, in <listcomp>
+    result = [service.files().get(fileId=x['id'] ).execute() for x in result]
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\googleapiclient\_helpers.py", line 130, in positional_wrapper
+    return wrapped(*args, **kwargs)
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\googleapiclient\http.py", line 846, in execute
+    method=str(self.method), body=self.body, headers=self.headers)
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\googleapiclient\http.py", line 183, in _retry_request
+    raise exception
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\googleapiclient\http.py", line 164, in _retry_request
+    resp, content = http.request(uri, method, *args, **kwargs)
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\oauth2client\transport.py", line 175, in new_request
+    redirections, connection_type)
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\oauth2client\transport.py", line 282, in request
+    connection_type=connection_type)
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\httplib2\__init__.py", line 1953, in request
+    cachekey,
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\httplib2\__init__.py", line 1618, in _request
+    conn, request_uri, method, body, headers
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\httplib2\__init__.py", line 1556, in _conn_request
+    response = conn.getresponse()
+  File "C:\Users\evillasante\Anaconda3\lib\http\client.py", line 1321, in getresponse
+    response.begin()
+  File "C:\Users\evillasante\Anaconda3\lib\http\client.py", line 296, in begin
+    version, status, reason = self._read_status()
+  File "C:\Users\evillasante\Anaconda3\lib\http\client.py", line 257, in _read_status
+    line = str(self.fp.readline(_MAXLINE + 1), "iso-8859-1")
+  File "C:\Users\evillasante\Anaconda3\lib\socket.py", line 589, in readinto
+    return self._sock.recv_into(b)
+  File "C:\Users\evillasante\Anaconda3\lib\ssl.py", line 1052, in recv_into
+    return self.read(nbytes, buffer)
+  File "C:\Users\evillasante\Anaconda3\lib\ssl.py", line 911, in read
+    return self._sslobj.read(len, buffer)
+ssl.SSLError: [SSL: WRONG_VERSION_NUMBER] wrong version number (_ssl.c:2488)
+2019-07-27 16:28:21,299 ERROR: Exception on / [GET] [in C:\Users\evillasante\Anaconda3\lib\site-packages\flask\app.py:1761]
+Traceback (most recent call last):
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\flask\app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\flask\app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\flask\app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\flask\_compat.py", line 35, in reraise
+    raise value
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\flask\app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:/Users/evillasante/Downloads/AMP-Tech-master3/Herokuapp/app.py", line 56, in home
+    disc = gd.items_folder(service,'Formatos_Calidad')
+  File "C:\Users\evillasante\Downloads\AMP-Tech-master3\Herokuapp\googledrive.py", line 31, in items_folder
+    result = [service.files().get(fileId=x['id'] ).execute() for x in result]
+  File "C:\Users\evillasante\Downloads\AMP-Tech-master3\Herokuapp\googledrive.py", line 31, in <listcomp>
+    result = [service.files().get(fileId=x['id'] ).execute() for x in result]
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\googleapiclient\_helpers.py", line 130, in positional_wrapper
+    return wrapped(*args, **kwargs)
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\googleapiclient\http.py", line 846, in execute
+    method=str(self.method), body=self.body, headers=self.headers)
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\googleapiclient\http.py", line 183, in _retry_request
+    raise exception
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\googleapiclient\http.py", line 164, in _retry_request
+    resp, content = http.request(uri, method, *args, **kwargs)
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\oauth2client\transport.py", line 175, in new_request
+    redirections, connection_type)
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\oauth2client\transport.py", line 282, in request
+    connection_type=connection_type)
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\httplib2\__init__.py", line 1953, in request
+    cachekey,
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\httplib2\__init__.py", line 1618, in _request
+    conn, request_uri, method, body, headers
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\httplib2\__init__.py", line 1556, in _conn_request
+    response = conn.getresponse()
+  File "C:\Users\evillasante\Anaconda3\lib\http\client.py", line 1321, in getresponse
+    response.begin()
+  File "C:\Users\evillasante\Anaconda3\lib\http\client.py", line 296, in begin
+    version, status, reason = self._read_status()
+  File "C:\Users\evillasante\Anaconda3\lib\http\client.py", line 257, in _read_status
+    line = str(self.fp.readline(_MAXLINE + 1), "iso-8859-1")
+  File "C:\Users\evillasante\Anaconda3\lib\socket.py", line 589, in readinto
+    return self._sock.recv_into(b)
+  File "C:\Users\evillasante\Anaconda3\lib\ssl.py", line 1052, in recv_into
+    return self.read(nbytes, buffer)
+  File "C:\Users\evillasante\Anaconda3\lib\ssl.py", line 911, in read
+    return self._sslobj.read(len, buffer)
+ssl.SSLError: [SSL: WRONG_VERSION_NUMBER] wrong version number (_ssl.c:2488)
+2019-07-28 11:15:54,736 ERROR: Exception on / [GET] [in C:\Users\evillasante\Anaconda3\lib\site-packages\flask\app.py:1761]
+Traceback (most recent call last):
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\flask\app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\flask\app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\flask\app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\flask\_compat.py", line 35, in reraise
+    raise value
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\flask\app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:/Users/evillasante/Downloads/AMP-Tech-master3/Herokuapp/app.py", line 51, in home
+    disc = gd.items_folder(service,'Formatos_Calidad')
+  File "C:\Users\evillasante\Downloads\AMP-Tech-master3\Herokuapp\googledrive.py", line 31, in items_folder
+    result = [service.files().get(fileId=x['id'] ).execute() for x in result]
+  File "C:\Users\evillasante\Downloads\AMP-Tech-master3\Herokuapp\googledrive.py", line 31, in <listcomp>
+    result = [service.files().get(fileId=x['id'] ).execute() for x in result]
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\googleapiclient\_helpers.py", line 130, in positional_wrapper
+    return wrapped(*args, **kwargs)
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\googleapiclient\http.py", line 846, in execute
+    method=str(self.method), body=self.body, headers=self.headers)
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\googleapiclient\http.py", line 183, in _retry_request
+    raise exception
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\googleapiclient\http.py", line 164, in _retry_request
+    resp, content = http.request(uri, method, *args, **kwargs)
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\oauth2client\transport.py", line 175, in new_request
+    redirections, connection_type)
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\oauth2client\transport.py", line 282, in request
+    connection_type=connection_type)
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\httplib2\__init__.py", line 1953, in request
+    cachekey,
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\httplib2\__init__.py", line 1618, in _request
+    conn, request_uri, method, body, headers
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\httplib2\__init__.py", line 1556, in _conn_request
+    response = conn.getresponse()
+  File "C:\Users\evillasante\Anaconda3\lib\http\client.py", line 1321, in getresponse
+    response.begin()
+  File "C:\Users\evillasante\Anaconda3\lib\http\client.py", line 296, in begin
+    version, status, reason = self._read_status()
+  File "C:\Users\evillasante\Anaconda3\lib\http\client.py", line 257, in _read_status
+    line = str(self.fp.readline(_MAXLINE + 1), "iso-8859-1")
+  File "C:\Users\evillasante\Anaconda3\lib\socket.py", line 589, in readinto
+    return self._sock.recv_into(b)
+  File "C:\Users\evillasante\Anaconda3\lib\ssl.py", line 1052, in recv_into
+    return self.read(nbytes, buffer)
+  File "C:\Users\evillasante\Anaconda3\lib\ssl.py", line 911, in read
+    return self._sslobj.read(len, buffer)
+ssl.SSLError: [SSL: WRONG_VERSION_NUMBER] wrong version number (_ssl.c:2488)
+2019-07-28 11:15:54,736 ERROR: Exception on / [GET] [in C:\Users\evillasante\Anaconda3\lib\site-packages\flask\app.py:1761]
+Traceback (most recent call last):
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\flask\app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\flask\app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\flask\app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\flask\_compat.py", line 35, in reraise
+    raise value
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\flask\app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:/Users/evillasante/Downloads/AMP-Tech-master3/Herokuapp/app.py", line 51, in home
+    disc = gd.items_folder(service,'Formatos_Calidad')
+  File "C:\Users\evillasante\Downloads\AMP-Tech-master3\Herokuapp\googledrive.py", line 31, in items_folder
+    result = [service.files().get(fileId=x['id'] ).execute() for x in result]
+  File "C:\Users\evillasante\Downloads\AMP-Tech-master3\Herokuapp\googledrive.py", line 31, in <listcomp>
+    result = [service.files().get(fileId=x['id'] ).execute() for x in result]
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\googleapiclient\_helpers.py", line 130, in positional_wrapper
+    return wrapped(*args, **kwargs)
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\googleapiclient\http.py", line 846, in execute
+    method=str(self.method), body=self.body, headers=self.headers)
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\googleapiclient\http.py", line 183, in _retry_request
+    raise exception
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\googleapiclient\http.py", line 164, in _retry_request
+    resp, content = http.request(uri, method, *args, **kwargs)
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\oauth2client\transport.py", line 175, in new_request
+    redirections, connection_type)
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\oauth2client\transport.py", line 282, in request
+    connection_type=connection_type)
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\httplib2\__init__.py", line 1953, in request
+    cachekey,
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\httplib2\__init__.py", line 1618, in _request
+    conn, request_uri, method, body, headers
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\httplib2\__init__.py", line 1556, in _conn_request
+    response = conn.getresponse()
+  File "C:\Users\evillasante\Anaconda3\lib\http\client.py", line 1321, in getresponse
+    response.begin()
+  File "C:\Users\evillasante\Anaconda3\lib\http\client.py", line 296, in begin
+    version, status, reason = self._read_status()
+  File "C:\Users\evillasante\Anaconda3\lib\http\client.py", line 257, in _read_status
+    line = str(self.fp.readline(_MAXLINE + 1), "iso-8859-1")
+  File "C:\Users\evillasante\Anaconda3\lib\socket.py", line 589, in readinto
+    return self._sock.recv_into(b)
+  File "C:\Users\evillasante\Anaconda3\lib\ssl.py", line 1052, in recv_into
+    return self.read(nbytes, buffer)
+  File "C:\Users\evillasante\Anaconda3\lib\ssl.py", line 911, in read
+    return self._sslobj.read(len, buffer)
+ssl.SSLError: [SSL: WRONG_VERSION_NUMBER] wrong version number (_ssl.c:2488)
+2019-07-28 11:15:54,737 ERROR: Exception on / [GET] [in C:\Users\evillasante\Anaconda3\lib\site-packages\flask\app.py:1761]
+Traceback (most recent call last):
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\flask\app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\flask\app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\flask\app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\flask\_compat.py", line 35, in reraise
+    raise value
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\flask\app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:/Users/evillasante/Downloads/AMP-Tech-master3/Herokuapp/app.py", line 51, in home
+    disc = gd.items_folder(service,'Formatos_Calidad')
+  File "C:\Users\evillasante\Downloads\AMP-Tech-master3\Herokuapp\googledrive.py", line 19, in items_folder
+    f_id = service.files().list(q=query,pageToken=None).execute()['items'][0]['id']
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\googleapiclient\_helpers.py", line 130, in positional_wrapper
+    return wrapped(*args, **kwargs)
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\googleapiclient\http.py", line 846, in execute
+    method=str(self.method), body=self.body, headers=self.headers)
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\googleapiclient\http.py", line 183, in _retry_request
+    raise exception
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\googleapiclient\http.py", line 164, in _retry_request
+    resp, content = http.request(uri, method, *args, **kwargs)
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\oauth2client\transport.py", line 175, in new_request
+    redirections, connection_type)
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\oauth2client\transport.py", line 282, in request
+    connection_type=connection_type)
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\httplib2\__init__.py", line 1953, in request
+    cachekey,
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\httplib2\__init__.py", line 1618, in _request
+    conn, request_uri, method, body, headers
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\httplib2\__init__.py", line 1556, in _conn_request
+    response = conn.getresponse()
+  File "C:\Users\evillasante\Anaconda3\lib\http\client.py", line 1321, in getresponse
+    response.begin()
+  File "C:\Users\evillasante\Anaconda3\lib\http\client.py", line 296, in begin
+    version, status, reason = self._read_status()
+  File "C:\Users\evillasante\Anaconda3\lib\http\client.py", line 257, in _read_status
+    line = str(self.fp.readline(_MAXLINE + 1), "iso-8859-1")
+  File "C:\Users\evillasante\Anaconda3\lib\socket.py", line 589, in readinto
+    return self._sock.recv_into(b)
+  File "C:\Users\evillasante\Anaconda3\lib\ssl.py", line 1052, in recv_into
+    return self.read(nbytes, buffer)
+  File "C:\Users\evillasante\Anaconda3\lib\ssl.py", line 911, in read
+    return self._sslobj.read(len, buffer)
+ssl.SSLError: [SSL: WRONG_VERSION_NUMBER] wrong version number (_ssl.c:2488)
+2019-07-28 11:15:54,737 ERROR: Exception on / [GET] [in C:\Users\evillasante\Anaconda3\lib\site-packages\flask\app.py:1761]
+Traceback (most recent call last):
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\flask\app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\flask\app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\flask\app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\flask\_compat.py", line 35, in reraise
+    raise value
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\flask\app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:/Users/evillasante/Downloads/AMP-Tech-master3/Herokuapp/app.py", line 51, in home
+    disc = gd.items_folder(service,'Formatos_Calidad')
+  File "C:\Users\evillasante\Downloads\AMP-Tech-master3\Herokuapp\googledrive.py", line 19, in items_folder
+    f_id = service.files().list(q=query,pageToken=None).execute()['items'][0]['id']
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\googleapiclient\_helpers.py", line 130, in positional_wrapper
+    return wrapped(*args, **kwargs)
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\googleapiclient\http.py", line 846, in execute
+    method=str(self.method), body=self.body, headers=self.headers)
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\googleapiclient\http.py", line 183, in _retry_request
+    raise exception
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\googleapiclient\http.py", line 164, in _retry_request
+    resp, content = http.request(uri, method, *args, **kwargs)
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\oauth2client\transport.py", line 175, in new_request
+    redirections, connection_type)
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\oauth2client\transport.py", line 282, in request
+    connection_type=connection_type)
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\httplib2\__init__.py", line 1953, in request
+    cachekey,
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\httplib2\__init__.py", line 1618, in _request
+    conn, request_uri, method, body, headers
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\httplib2\__init__.py", line 1556, in _conn_request
+    response = conn.getresponse()
+  File "C:\Users\evillasante\Anaconda3\lib\http\client.py", line 1321, in getresponse
+    response.begin()
+  File "C:\Users\evillasante\Anaconda3\lib\http\client.py", line 296, in begin
+    version, status, reason = self._read_status()
+  File "C:\Users\evillasante\Anaconda3\lib\http\client.py", line 257, in _read_status
+    line = str(self.fp.readline(_MAXLINE + 1), "iso-8859-1")
+  File "C:\Users\evillasante\Anaconda3\lib\socket.py", line 589, in readinto
+    return self._sock.recv_into(b)
+  File "C:\Users\evillasante\Anaconda3\lib\ssl.py", line 1052, in recv_into
+    return self.read(nbytes, buffer)
+  File "C:\Users\evillasante\Anaconda3\lib\ssl.py", line 911, in read
+    return self._sslobj.read(len, buffer)
+ssl.SSLError: [SSL: WRONG_VERSION_NUMBER] wrong version number (_ssl.c:2488)
+2019-07-28 11:17:08,066 ERROR: Exception on /list_protocolo [GET] [in C:\Users\evillasante\Anaconda3\lib\site-packages\flask\app.py:1761]
+Traceback (most recent call last):
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\sqlalchemy\engine\base.py", line 1244, in _execute_context
+    cursor, statement, parameters, context
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\sqlalchemy\engine\default.py", line 552, in do_execute
+    cursor.execute(statement, parameters)
+sqlite3.OperationalError: no such table: f0016_2
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\flask\app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\flask\app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\flask\app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\flask\_compat.py", line 35, in reraise
+    raise value
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\flask\app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:/Users/evillasante/Downloads/AMP-Tech-master3/Herokuapp/app.py", line 68, in list_protocolo
+    exec("qry1 = db_session.query(" + fname + ").all()")
+  File "<string>", line 1, in <module>
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\sqlalchemy\orm\query.py", line 3161, in all
+    return list(self)
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\sqlalchemy\orm\query.py", line 3317, in __iter__
+    return self._execute_and_instances(context)
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\sqlalchemy\orm\query.py", line 3342, in _execute_and_instances
+    result = conn.execute(querycontext.statement, self._params)
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\sqlalchemy\engine\base.py", line 988, in execute
+    return meth(self, multiparams, params)
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\sqlalchemy\sql\elements.py", line 287, in _execute_on_connection
+    return connection._execute_clauseelement(self, multiparams, params)
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\sqlalchemy\engine\base.py", line 1107, in _execute_clauseelement
+    distilled_params,
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\sqlalchemy\engine\base.py", line 1248, in _execute_context
+    e, statement, parameters, cursor, context
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\sqlalchemy\engine\base.py", line 1466, in _handle_dbapi_exception
+    util.raise_from_cause(sqlalchemy_exception, exc_info)
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\sqlalchemy\util\compat.py", line 383, in raise_from_cause
+    reraise(type(exception), exception, tb=exc_tb, cause=cause)
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\sqlalchemy\util\compat.py", line 128, in reraise
+    raise value.with_traceback(tb)
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\sqlalchemy\engine\base.py", line 1244, in _execute_context
+    cursor, statement, parameters, context
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\sqlalchemy\engine\default.py", line 552, in do_execute
+    cursor.execute(statement, parameters)
+sqlalchemy.exc.OperationalError: (sqlite3.OperationalError) no such table: f0016_2
+[SQL: SELECT f0016_2.id AS f0016_2_id, f0016_2.area AS f0016_2_area, f0016_2.subarea AS f0016_2_subarea, f0016_2.elemento AS f0016_2_elemento, f0016_2.ubicacion AS f0016_2_ubicacion, f0016_2.fecha AS f0016_2_fecha, f0016_2.plano AS f0016_2_plano, f0016_2.metodo AS f0016_2_metodo, f0016_2.q21 AS f0016_2_q21, f0016_2.q22 AS f0016_2_q22, f0016_2.q23 AS f0016_2_q23, f0016_2.q24 AS f0016_2_q24, f0016_2.q25 AS f0016_2_q25, f0016_2.q26 AS f0016_2_q26, f0016_2.q27 AS f0016_2_q27, f0016_2.fprint AS f0016_2_fprint, f0016_2.fscan AS f0016_2_fscan, f0016_2.esquema AS f0016_2_esquema, f0016_2.observacion AS f0016_2_observacion 
+FROM f0016_2]
+(Background on this error at: http://sqlalche.me/e/e3q8)
+2019-07-28 11:17:08,066 ERROR: Exception on /list_protocolo [GET] [in C:\Users\evillasante\Anaconda3\lib\site-packages\flask\app.py:1761]
+Traceback (most recent call last):
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\sqlalchemy\engine\base.py", line 1244, in _execute_context
+    cursor, statement, parameters, context
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\sqlalchemy\engine\default.py", line 552, in do_execute
+    cursor.execute(statement, parameters)
+sqlite3.OperationalError: no such table: f0016_2
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\flask\app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\flask\app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\flask\app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\flask\_compat.py", line 35, in reraise
+    raise value
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\flask\app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:/Users/evillasante/Downloads/AMP-Tech-master3/Herokuapp/app.py", line 68, in list_protocolo
+    exec("qry1 = db_session.query(" + fname + ").all()")
+  File "<string>", line 1, in <module>
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\sqlalchemy\orm\query.py", line 3161, in all
+    return list(self)
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\sqlalchemy\orm\query.py", line 3317, in __iter__
+    return self._execute_and_instances(context)
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\sqlalchemy\orm\query.py", line 3342, in _execute_and_instances
+    result = conn.execute(querycontext.statement, self._params)
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\sqlalchemy\engine\base.py", line 988, in execute
+    return meth(self, multiparams, params)
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\sqlalchemy\sql\elements.py", line 287, in _execute_on_connection
+    return connection._execute_clauseelement(self, multiparams, params)
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\sqlalchemy\engine\base.py", line 1107, in _execute_clauseelement
+    distilled_params,
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\sqlalchemy\engine\base.py", line 1248, in _execute_context
+    e, statement, parameters, cursor, context
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\sqlalchemy\engine\base.py", line 1466, in _handle_dbapi_exception
+    util.raise_from_cause(sqlalchemy_exception, exc_info)
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\sqlalchemy\util\compat.py", line 383, in raise_from_cause
+    reraise(type(exception), exception, tb=exc_tb, cause=cause)
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\sqlalchemy\util\compat.py", line 128, in reraise
+    raise value.with_traceback(tb)
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\sqlalchemy\engine\base.py", line 1244, in _execute_context
+    cursor, statement, parameters, context
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\sqlalchemy\engine\default.py", line 552, in do_execute
+    cursor.execute(statement, parameters)
+sqlalchemy.exc.OperationalError: (sqlite3.OperationalError) no such table: f0016_2
+[SQL: SELECT f0016_2.id AS f0016_2_id, f0016_2.area AS f0016_2_area, f0016_2.subarea AS f0016_2_subarea, f0016_2.elemento AS f0016_2_elemento, f0016_2.ubicacion AS f0016_2_ubicacion, f0016_2.fecha AS f0016_2_fecha, f0016_2.plano AS f0016_2_plano, f0016_2.metodo AS f0016_2_metodo, f0016_2.q21 AS f0016_2_q21, f0016_2.q22 AS f0016_2_q22, f0016_2.q23 AS f0016_2_q23, f0016_2.q24 AS f0016_2_q24, f0016_2.q25 AS f0016_2_q25, f0016_2.q26 AS f0016_2_q26, f0016_2.q27 AS f0016_2_q27, f0016_2.fprint AS f0016_2_fprint, f0016_2.fscan AS f0016_2_fscan, f0016_2.esquema AS f0016_2_esquema, f0016_2.observacion AS f0016_2_observacion 
+FROM f0016_2]
+(Background on this error at: http://sqlalche.me/e/e3q8)
+2019-07-28 11:21:19,368 ERROR: Exception on / [GET] [in C:\Users\evillasante\Anaconda3\lib\site-packages\flask\app.py:1761]
+Traceback (most recent call last):
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\flask\app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\flask\app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\flask\app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\flask\_compat.py", line 35, in reraise
+    raise value
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\flask\app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:/Users/evillasante/Downloads/AMP-Tech-master3/Herokuapp/app.py", line 51, in home
+    disc = gd.items_folder(service,'Formatos_Calidad')
+  File "C:\Users\evillasante\Downloads\AMP-Tech-master3\Herokuapp\googledrive.py", line 31, in items_folder
+    result = [service.files().get(fileId=x['id'] ).execute() for x in result]
+  File "C:\Users\evillasante\Downloads\AMP-Tech-master3\Herokuapp\googledrive.py", line 31, in <listcomp>
+    result = [service.files().get(fileId=x['id'] ).execute() for x in result]
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\googleapiclient\_helpers.py", line 130, in positional_wrapper
+    return wrapped(*args, **kwargs)
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\googleapiclient\http.py", line 846, in execute
+    method=str(self.method), body=self.body, headers=self.headers)
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\googleapiclient\http.py", line 183, in _retry_request
+    raise exception
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\googleapiclient\http.py", line 164, in _retry_request
+    resp, content = http.request(uri, method, *args, **kwargs)
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\oauth2client\transport.py", line 175, in new_request
+    redirections, connection_type)
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\oauth2client\transport.py", line 282, in request
+    connection_type=connection_type)
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\httplib2\__init__.py", line 1953, in request
+    cachekey,
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\httplib2\__init__.py", line 1618, in _request
+    conn, request_uri, method, body, headers
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\httplib2\__init__.py", line 1556, in _conn_request
+    response = conn.getresponse()
+  File "C:\Users\evillasante\Anaconda3\lib\http\client.py", line 1321, in getresponse
+    response.begin()
+  File "C:\Users\evillasante\Anaconda3\lib\http\client.py", line 296, in begin
+    version, status, reason = self._read_status()
+  File "C:\Users\evillasante\Anaconda3\lib\http\client.py", line 257, in _read_status
+    line = str(self.fp.readline(_MAXLINE + 1), "iso-8859-1")
+  File "C:\Users\evillasante\Anaconda3\lib\socket.py", line 589, in readinto
+    return self._sock.recv_into(b)
+  File "C:\Users\evillasante\Anaconda3\lib\ssl.py", line 1052, in recv_into
+    return self.read(nbytes, buffer)
+  File "C:\Users\evillasante\Anaconda3\lib\ssl.py", line 911, in read
+    return self._sslobj.read(len, buffer)
+ssl.SSLError: [SSL: WRONG_VERSION_NUMBER] wrong version number (_ssl.c:2488)
+2019-07-28 11:21:19,368 ERROR: Exception on / [GET] [in C:\Users\evillasante\Anaconda3\lib\site-packages\flask\app.py:1761]
+Traceback (most recent call last):
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\flask\app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\flask\app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\flask\app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\flask\_compat.py", line 35, in reraise
+    raise value
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\flask\app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:/Users/evillasante/Downloads/AMP-Tech-master3/Herokuapp/app.py", line 51, in home
+    disc = gd.items_folder(service,'Formatos_Calidad')
+  File "C:\Users\evillasante\Downloads\AMP-Tech-master3\Herokuapp\googledrive.py", line 31, in items_folder
+    result = [service.files().get(fileId=x['id'] ).execute() for x in result]
+  File "C:\Users\evillasante\Downloads\AMP-Tech-master3\Herokuapp\googledrive.py", line 31, in <listcomp>
+    result = [service.files().get(fileId=x['id'] ).execute() for x in result]
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\googleapiclient\_helpers.py", line 130, in positional_wrapper
+    return wrapped(*args, **kwargs)
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\googleapiclient\http.py", line 846, in execute
+    method=str(self.method), body=self.body, headers=self.headers)
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\googleapiclient\http.py", line 183, in _retry_request
+    raise exception
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\googleapiclient\http.py", line 164, in _retry_request
+    resp, content = http.request(uri, method, *args, **kwargs)
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\oauth2client\transport.py", line 175, in new_request
+    redirections, connection_type)
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\oauth2client\transport.py", line 282, in request
+    connection_type=connection_type)
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\httplib2\__init__.py", line 1953, in request
+    cachekey,
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\httplib2\__init__.py", line 1618, in _request
+    conn, request_uri, method, body, headers
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\httplib2\__init__.py", line 1556, in _conn_request
+    response = conn.getresponse()
+  File "C:\Users\evillasante\Anaconda3\lib\http\client.py", line 1321, in getresponse
+    response.begin()
+  File "C:\Users\evillasante\Anaconda3\lib\http\client.py", line 296, in begin
+    version, status, reason = self._read_status()
+  File "C:\Users\evillasante\Anaconda3\lib\http\client.py", line 257, in _read_status
+    line = str(self.fp.readline(_MAXLINE + 1), "iso-8859-1")
+  File "C:\Users\evillasante\Anaconda3\lib\socket.py", line 589, in readinto
+    return self._sock.recv_into(b)
+  File "C:\Users\evillasante\Anaconda3\lib\ssl.py", line 1052, in recv_into
+    return self.read(nbytes, buffer)
+  File "C:\Users\evillasante\Anaconda3\lib\ssl.py", line 911, in read
+    return self._sslobj.read(len, buffer)
+ssl.SSLError: [SSL: WRONG_VERSION_NUMBER] wrong version number (_ssl.c:2488)
+2019-07-28 11:21:19,368 ERROR: Exception on / [GET] [in C:\Users\evillasante\Anaconda3\lib\site-packages\flask\app.py:1761]
+Traceback (most recent call last):
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\flask\app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\flask\app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\flask\app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\flask\_compat.py", line 35, in reraise
+    raise value
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\flask\app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:/Users/evillasante/Downloads/AMP-Tech-master3/Herokuapp/app.py", line 51, in home
+    disc = gd.items_folder(service,'Formatos_Calidad')
+  File "C:\Users\evillasante\Downloads\AMP-Tech-master3\Herokuapp\googledrive.py", line 19, in items_folder
+    f_id = service.files().list(q=query,pageToken=None).execute()['items'][0]['id']
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\googleapiclient\_helpers.py", line 130, in positional_wrapper
+    return wrapped(*args, **kwargs)
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\googleapiclient\http.py", line 846, in execute
+    method=str(self.method), body=self.body, headers=self.headers)
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\googleapiclient\http.py", line 183, in _retry_request
+    raise exception
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\googleapiclient\http.py", line 164, in _retry_request
+    resp, content = http.request(uri, method, *args, **kwargs)
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\oauth2client\transport.py", line 175, in new_request
+    redirections, connection_type)
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\oauth2client\transport.py", line 282, in request
+    connection_type=connection_type)
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\httplib2\__init__.py", line 1953, in request
+    cachekey,
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\httplib2\__init__.py", line 1618, in _request
+    conn, request_uri, method, body, headers
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\httplib2\__init__.py", line 1556, in _conn_request
+    response = conn.getresponse()
+  File "C:\Users\evillasante\Anaconda3\lib\http\client.py", line 1321, in getresponse
+    response.begin()
+  File "C:\Users\evillasante\Anaconda3\lib\http\client.py", line 296, in begin
+    version, status, reason = self._read_status()
+  File "C:\Users\evillasante\Anaconda3\lib\http\client.py", line 257, in _read_status
+    line = str(self.fp.readline(_MAXLINE + 1), "iso-8859-1")
+  File "C:\Users\evillasante\Anaconda3\lib\socket.py", line 589, in readinto
+    return self._sock.recv_into(b)
+  File "C:\Users\evillasante\Anaconda3\lib\ssl.py", line 1052, in recv_into
+    return self.read(nbytes, buffer)
+  File "C:\Users\evillasante\Anaconda3\lib\ssl.py", line 911, in read
+    return self._sslobj.read(len, buffer)
+ssl.SSLError: [SSL: WRONG_VERSION_NUMBER] wrong version number (_ssl.c:2488)
+2019-07-28 11:21:19,368 ERROR: Exception on / [GET] [in C:\Users\evillasante\Anaconda3\lib\site-packages\flask\app.py:1761]
+Traceback (most recent call last):
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\flask\app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\flask\app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\flask\app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\flask\_compat.py", line 35, in reraise
+    raise value
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\flask\app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:/Users/evillasante/Downloads/AMP-Tech-master3/Herokuapp/app.py", line 51, in home
+    disc = gd.items_folder(service,'Formatos_Calidad')
+  File "C:\Users\evillasante\Downloads\AMP-Tech-master3\Herokuapp\googledrive.py", line 19, in items_folder
+    f_id = service.files().list(q=query,pageToken=None).execute()['items'][0]['id']
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\googleapiclient\_helpers.py", line 130, in positional_wrapper
+    return wrapped(*args, **kwargs)
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\googleapiclient\http.py", line 846, in execute
+    method=str(self.method), body=self.body, headers=self.headers)
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\googleapiclient\http.py", line 183, in _retry_request
+    raise exception
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\googleapiclient\http.py", line 164, in _retry_request
+    resp, content = http.request(uri, method, *args, **kwargs)
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\oauth2client\transport.py", line 175, in new_request
+    redirections, connection_type)
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\oauth2client\transport.py", line 282, in request
+    connection_type=connection_type)
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\httplib2\__init__.py", line 1953, in request
+    cachekey,
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\httplib2\__init__.py", line 1618, in _request
+    conn, request_uri, method, body, headers
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\httplib2\__init__.py", line 1556, in _conn_request
+    response = conn.getresponse()
+  File "C:\Users\evillasante\Anaconda3\lib\http\client.py", line 1321, in getresponse
+    response.begin()
+  File "C:\Users\evillasante\Anaconda3\lib\http\client.py", line 296, in begin
+    version, status, reason = self._read_status()
+  File "C:\Users\evillasante\Anaconda3\lib\http\client.py", line 257, in _read_status
+    line = str(self.fp.readline(_MAXLINE + 1), "iso-8859-1")
+  File "C:\Users\evillasante\Anaconda3\lib\socket.py", line 589, in readinto
+    return self._sock.recv_into(b)
+  File "C:\Users\evillasante\Anaconda3\lib\ssl.py", line 1052, in recv_into
+    return self.read(nbytes, buffer)
+  File "C:\Users\evillasante\Anaconda3\lib\ssl.py", line 911, in read
+    return self._sslobj.read(len, buffer)
+ssl.SSLError: [SSL: WRONG_VERSION_NUMBER] wrong version number (_ssl.c:2488)
+2019-07-28 11:22:41,718 ERROR: Exception on /edit_protocolo [GET] [in C:\Users\evillasante\Anaconda3\lib\site-packages\flask\app.py:1761]
+Traceback (most recent call last):
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\flask\app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\flask\app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\flask\app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\flask\_compat.py", line 35, in reraise
+    raise value
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\flask\app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:/Users/evillasante/Downloads/AMP-Tech-master3/Herokuapp/app.py", line 76, in edit_protocolo
+    return render_template('forms/' + fname + '.html')
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\flask\templating.py", line 134, in render_template
+    return _render(ctx.app.jinja_env.get_or_select_template(template_name_or_list),
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\jinja2\environment.py", line 869, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\jinja2\environment.py", line 830, in get_template
+    return self._load_template(name, self.make_globals(globals))
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\jinja2\environment.py", line 804, in _load_template
+    template = self.loader.load(self, name, globals)
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\jinja2\loaders.py", line 113, in load
+    source, filename, uptodate = self.get_source(environment, name)
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\flask\templating.py", line 58, in get_source
+    return self._get_source_fast(environment, template)
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\flask\templating.py", line 86, in _get_source_fast
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: forms/f0016.html
+2019-07-28 11:22:41,718 ERROR: Exception on /edit_protocolo [GET] [in C:\Users\evillasante\Anaconda3\lib\site-packages\flask\app.py:1761]
+Traceback (most recent call last):
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\flask\app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\flask\app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\flask\app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\flask\_compat.py", line 35, in reraise
+    raise value
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\flask\app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:/Users/evillasante/Downloads/AMP-Tech-master3/Herokuapp/app.py", line 76, in edit_protocolo
+    return render_template('forms/' + fname + '.html')
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\flask\templating.py", line 134, in render_template
+    return _render(ctx.app.jinja_env.get_or_select_template(template_name_or_list),
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\jinja2\environment.py", line 869, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\jinja2\environment.py", line 830, in get_template
+    return self._load_template(name, self.make_globals(globals))
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\jinja2\environment.py", line 804, in _load_template
+    template = self.loader.load(self, name, globals)
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\jinja2\loaders.py", line 113, in load
+    source, filename, uptodate = self.get_source(environment, name)
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\flask\templating.py", line 58, in get_source
+    return self._get_source_fast(environment, template)
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\flask\templating.py", line 86, in _get_source_fast
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: forms/f0016.html
+2019-07-28 11:35:34,389 ERROR: Exception on /upload [POST] [in C:\Users\evillasante\Anaconda3\lib\site-packages\flask\app.py:1761]
+Traceback (most recent call last):
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\flask\app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\flask\app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\flask\app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\flask\_compat.py", line 35, in reraise
+    raise value
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\flask\app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:/Users/evillasante/Downloads/AMP-Tech-master3/Herokuapp/app.py", line 196, in upload
+    os.rename(jpgname, nom_form + reg + ".jpg")
+TypeError: can only concatenate str (not "int") to str
+2019-07-28 11:35:34,389 ERROR: Exception on /upload [POST] [in C:\Users\evillasante\Anaconda3\lib\site-packages\flask\app.py:1761]
+Traceback (most recent call last):
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\flask\app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\flask\app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\flask\app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\flask\_compat.py", line 35, in reraise
+    raise value
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\flask\app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:/Users/evillasante/Downloads/AMP-Tech-master3/Herokuapp/app.py", line 196, in upload
+    os.rename(jpgname, nom_form + reg + ".jpg")
+TypeError: can only concatenate str (not "int") to str
+2019-07-28 11:43:46,795 ERROR: Exception on /upload [POST] [in C:\Users\evillasante\Anaconda3\lib\site-packages\flask\app.py:1761]
+Traceback (most recent call last):
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\flask\app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\flask\app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\flask\app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\flask\_compat.py", line 35, in reraise
+    raise value
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\flask\app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:/Users/evillasante/Downloads/AMP-Tech-master3/Herokuapp/app.py", line 211, in upload
+    media_body = MediaFileUpload(c1 + ".jpg", mimetype='image/jpeg', resumable=True)
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\googleapiclient\_helpers.py", line 130, in positional_wrapper
+    return wrapped(*args, **kwargs)
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\googleapiclient\http.py", line 554, in __init__
+    fd = open(self._filename, 'rb')
+FileNotFoundError: [Errno 2] No such file or directory: '00160018.jpg'
+2019-07-28 11:43:46,795 ERROR: Exception on /upload [POST] [in C:\Users\evillasante\Anaconda3\lib\site-packages\flask\app.py:1761]
+Traceback (most recent call last):
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\flask\app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\flask\app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\flask\app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\flask\_compat.py", line 35, in reraise
+    raise value
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\flask\app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:/Users/evillasante/Downloads/AMP-Tech-master3/Herokuapp/app.py", line 211, in upload
+    media_body = MediaFileUpload(c1 + ".jpg", mimetype='image/jpeg', resumable=True)
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\googleapiclient\_helpers.py", line 130, in positional_wrapper
+    return wrapped(*args, **kwargs)
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\googleapiclient\http.py", line 554, in __init__
+    fd = open(self._filename, 'rb')
+FileNotFoundError: [Errno 2] No such file or directory: '00160018.jpg'
+2019-07-28 15:49:06,532 ERROR: Exception on / [GET] [in C:\Users\evillasante\Anaconda3\lib\site-packages\flask\app.py:1761]
+Traceback (most recent call last):
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\flask\app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\flask\app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\flask\app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\flask\_compat.py", line 35, in reraise
+    raise value
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\flask\app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:/Users/evillasante/Downloads/AMP-Tech-master3/Herokuapp/app.py", line 50, in home
+    disc = gd.items_folder(service,'Formatos_Calidad')
+  File "C:\Users\evillasante\Downloads\AMP-Tech-master3\Herokuapp\googledrive.py", line 21, in items_folder
+    f_id = service.files().list(q=query,pageToken=None).execute()['items'][0]['id']
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\googleapiclient\_helpers.py", line 130, in positional_wrapper
+    return wrapped(*args, **kwargs)
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\googleapiclient\http.py", line 846, in execute
+    method=str(self.method), body=self.body, headers=self.headers)
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\googleapiclient\http.py", line 183, in _retry_request
+    raise exception
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\googleapiclient\http.py", line 164, in _retry_request
+    resp, content = http.request(uri, method, *args, **kwargs)
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\oauth2client\transport.py", line 175, in new_request
+    redirections, connection_type)
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\oauth2client\transport.py", line 282, in request
+    connection_type=connection_type)
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\httplib2\__init__.py", line 1953, in request
+    cachekey,
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\httplib2\__init__.py", line 1618, in _request
+    conn, request_uri, method, body, headers
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\httplib2\__init__.py", line 1556, in _conn_request
+    response = conn.getresponse()
+  File "C:\Users\evillasante\Anaconda3\lib\http\client.py", line 1321, in getresponse
+    response.begin()
+  File "C:\Users\evillasante\Anaconda3\lib\http\client.py", line 296, in begin
+    version, status, reason = self._read_status()
+  File "C:\Users\evillasante\Anaconda3\lib\http\client.py", line 257, in _read_status
+    line = str(self.fp.readline(_MAXLINE + 1), "iso-8859-1")
+  File "C:\Users\evillasante\Anaconda3\lib\socket.py", line 589, in readinto
+    return self._sock.recv_into(b)
+  File "C:\Users\evillasante\Anaconda3\lib\ssl.py", line 1052, in recv_into
+    return self.read(nbytes, buffer)
+  File "C:\Users\evillasante\Anaconda3\lib\ssl.py", line 911, in read
+    return self._sslobj.read(len, buffer)
+ssl.SSLError: [SSL: WRONG_VERSION_NUMBER] wrong version number (_ssl.c:2488)
+2019-07-28 15:49:06,532 ERROR: Exception on / [GET] [in C:\Users\evillasante\Anaconda3\lib\site-packages\flask\app.py:1761]
+Traceback (most recent call last):
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\flask\app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\flask\app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\flask\app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\flask\_compat.py", line 35, in reraise
+    raise value
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\flask\app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:/Users/evillasante/Downloads/AMP-Tech-master3/Herokuapp/app.py", line 50, in home
+    disc = gd.items_folder(service,'Formatos_Calidad')
+  File "C:\Users\evillasante\Downloads\AMP-Tech-master3\Herokuapp\googledrive.py", line 21, in items_folder
+    f_id = service.files().list(q=query,pageToken=None).execute()['items'][0]['id']
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\googleapiclient\_helpers.py", line 130, in positional_wrapper
+    return wrapped(*args, **kwargs)
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\googleapiclient\http.py", line 846, in execute
+    method=str(self.method), body=self.body, headers=self.headers)
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\googleapiclient\http.py", line 183, in _retry_request
+    raise exception
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\googleapiclient\http.py", line 164, in _retry_request
+    resp, content = http.request(uri, method, *args, **kwargs)
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\oauth2client\transport.py", line 175, in new_request
+    redirections, connection_type)
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\oauth2client\transport.py", line 282, in request
+    connection_type=connection_type)
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\httplib2\__init__.py", line 1953, in request
+    cachekey,
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\httplib2\__init__.py", line 1618, in _request
+    conn, request_uri, method, body, headers
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\httplib2\__init__.py", line 1556, in _conn_request
+    response = conn.getresponse()
+  File "C:\Users\evillasante\Anaconda3\lib\http\client.py", line 1321, in getresponse
+    response.begin()
+  File "C:\Users\evillasante\Anaconda3\lib\http\client.py", line 296, in begin
+    version, status, reason = self._read_status()
+  File "C:\Users\evillasante\Anaconda3\lib\http\client.py", line 257, in _read_status
+    line = str(self.fp.readline(_MAXLINE + 1), "iso-8859-1")
+  File "C:\Users\evillasante\Anaconda3\lib\socket.py", line 589, in readinto
+    return self._sock.recv_into(b)
+  File "C:\Users\evillasante\Anaconda3\lib\ssl.py", line 1052, in recv_into
+    return self.read(nbytes, buffer)
+  File "C:\Users\evillasante\Anaconda3\lib\ssl.py", line 911, in read
+    return self._sslobj.read(len, buffer)
+ssl.SSLError: [SSL: WRONG_VERSION_NUMBER] wrong version number (_ssl.c:2488)
+2019-07-28 15:49:06,533 ERROR: Exception on / [GET] [in C:\Users\evillasante\Anaconda3\lib\site-packages\flask\app.py:1761]
+Traceback (most recent call last):
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\flask\app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\flask\app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\flask\app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\flask\_compat.py", line 35, in reraise
+    raise value
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\flask\app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:/Users/evillasante/Downloads/AMP-Tech-master3/Herokuapp/app.py", line 50, in home
+    disc = gd.items_folder(service,'Formatos_Calidad')
+  File "C:\Users\evillasante\Downloads\AMP-Tech-master3\Herokuapp\googledrive.py", line 21, in items_folder
+    f_id = service.files().list(q=query,pageToken=None).execute()['items'][0]['id']
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\googleapiclient\_helpers.py", line 130, in positional_wrapper
+    return wrapped(*args, **kwargs)
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\googleapiclient\http.py", line 846, in execute
+    method=str(self.method), body=self.body, headers=self.headers)
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\googleapiclient\http.py", line 183, in _retry_request
+    raise exception
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\googleapiclient\http.py", line 164, in _retry_request
+    resp, content = http.request(uri, method, *args, **kwargs)
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\oauth2client\transport.py", line 186, in new_request
+    credentials._refresh(orig_request_method)
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\oauth2client\client.py", line 761, in _refresh
+    self._do_refresh_request(http)
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\oauth2client\client.py", line 780, in _do_refresh_request
+    body=body, headers=headers)
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\oauth2client\transport.py", line 282, in request
+    connection_type=connection_type)
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\httplib2\__init__.py", line 1953, in request
+    cachekey,
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\httplib2\__init__.py", line 1618, in _request
+    conn, request_uri, method, body, headers
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\httplib2\__init__.py", line 1556, in _conn_request
+    response = conn.getresponse()
+  File "C:\Users\evillasante\Anaconda3\lib\http\client.py", line 1321, in getresponse
+    response.begin()
+  File "C:\Users\evillasante\Anaconda3\lib\http\client.py", line 296, in begin
+    version, status, reason = self._read_status()
+  File "C:\Users\evillasante\Anaconda3\lib\http\client.py", line 257, in _read_status
+    line = str(self.fp.readline(_MAXLINE + 1), "iso-8859-1")
+  File "C:\Users\evillasante\Anaconda3\lib\socket.py", line 589, in readinto
+    return self._sock.recv_into(b)
+  File "C:\Users\evillasante\Anaconda3\lib\ssl.py", line 1052, in recv_into
+    return self.read(nbytes, buffer)
+  File "C:\Users\evillasante\Anaconda3\lib\ssl.py", line 911, in read
+    return self._sslobj.read(len, buffer)
+ssl.SSLError: [SSL: WRONG_VERSION_NUMBER] wrong version number (_ssl.c:2488)
+2019-07-28 15:49:06,533 ERROR: Exception on / [GET] [in C:\Users\evillasante\Anaconda3\lib\site-packages\flask\app.py:1761]
+Traceback (most recent call last):
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\flask\app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\flask\app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\flask\app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\flask\_compat.py", line 35, in reraise
+    raise value
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\flask\app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:/Users/evillasante/Downloads/AMP-Tech-master3/Herokuapp/app.py", line 50, in home
+    disc = gd.items_folder(service,'Formatos_Calidad')
+  File "C:\Users\evillasante\Downloads\AMP-Tech-master3\Herokuapp\googledrive.py", line 21, in items_folder
+    f_id = service.files().list(q=query,pageToken=None).execute()['items'][0]['id']
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\googleapiclient\_helpers.py", line 130, in positional_wrapper
+    return wrapped(*args, **kwargs)
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\googleapiclient\http.py", line 846, in execute
+    method=str(self.method), body=self.body, headers=self.headers)
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\googleapiclient\http.py", line 183, in _retry_request
+    raise exception
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\googleapiclient\http.py", line 164, in _retry_request
+    resp, content = http.request(uri, method, *args, **kwargs)
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\oauth2client\transport.py", line 186, in new_request
+    credentials._refresh(orig_request_method)
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\oauth2client\client.py", line 761, in _refresh
+    self._do_refresh_request(http)
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\oauth2client\client.py", line 780, in _do_refresh_request
+    body=body, headers=headers)
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\oauth2client\transport.py", line 282, in request
+    connection_type=connection_type)
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\httplib2\__init__.py", line 1953, in request
+    cachekey,
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\httplib2\__init__.py", line 1618, in _request
+    conn, request_uri, method, body, headers
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\httplib2\__init__.py", line 1556, in _conn_request
+    response = conn.getresponse()
+  File "C:\Users\evillasante\Anaconda3\lib\http\client.py", line 1321, in getresponse
+    response.begin()
+  File "C:\Users\evillasante\Anaconda3\lib\http\client.py", line 296, in begin
+    version, status, reason = self._read_status()
+  File "C:\Users\evillasante\Anaconda3\lib\http\client.py", line 257, in _read_status
+    line = str(self.fp.readline(_MAXLINE + 1), "iso-8859-1")
+  File "C:\Users\evillasante\Anaconda3\lib\socket.py", line 589, in readinto
+    return self._sock.recv_into(b)
+  File "C:\Users\evillasante\Anaconda3\lib\ssl.py", line 1052, in recv_into
+    return self.read(nbytes, buffer)
+  File "C:\Users\evillasante\Anaconda3\lib\ssl.py", line 911, in read
+    return self._sslobj.read(len, buffer)
+ssl.SSLError: [SSL: WRONG_VERSION_NUMBER] wrong version number (_ssl.c:2488)
+2019-07-28 16:27:31,132 ERROR: Exception on /protocolo_print [GET] [in C:\Users\evillasante\Anaconda3\lib\site-packages\flask\app.py:1761]
+Traceback (most recent call last):
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\flask\app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\flask\app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\flask\app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\flask\_compat.py", line 35, in reraise
+    raise value
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\flask\app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:/Users/evillasante/Downloads/AMP-Tech-master3/Herokuapp/app.py", line 112, in protocolo_print
+    ean = EAN(name, writer=ImageWriter())
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\barcode\ean.py", line 150, in __init__
+    EuropeanArticleNumber13.__init__(self, ean, writer)
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\barcode\ean.py", line 50, in __init__
+    '{1}.'.format(self.digits, len(ean)))
+barcode.errors.NumberOfDigitsError: EAN must have 7 digits, not 6.
+2019-07-28 16:27:31,132 ERROR: Exception on /protocolo_print [GET] [in C:\Users\evillasante\Anaconda3\lib\site-packages\flask\app.py:1761]
+Traceback (most recent call last):
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\flask\app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\flask\app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\flask\app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\flask\_compat.py", line 35, in reraise
+    raise value
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\flask\app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:/Users/evillasante/Downloads/AMP-Tech-master3/Herokuapp/app.py", line 112, in protocolo_print
+    ean = EAN(name, writer=ImageWriter())
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\barcode\ean.py", line 150, in __init__
+    EuropeanArticleNumber13.__init__(self, ean, writer)
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\barcode\ean.py", line 50, in __init__
+    '{1}.'.format(self.digits, len(ean)))
+barcode.errors.NumberOfDigitsError: EAN must have 7 digits, not 6.
+2019-07-28 16:29:18,799 ERROR: Exception on /protocolo_print [GET] [in C:\Users\evillasante\Anaconda3\lib\site-packages\flask\app.py:1761]
+Traceback (most recent call last):
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\flask\app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\flask\app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\flask\app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\flask\_compat.py", line 35, in reraise
+    raise value
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\flask\app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:/Users/evillasante/Downloads/AMP-Tech-master3/Herokuapp/app.py", line 120, in protocolo_print
+    doc.save(filename)
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\docxtpl\__init__.py", line 558, in save
+    self.docx.save(filename,*args,**kwargs)
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\docx\document.py", line 142, in save
+    self._part.save(path_or_stream)
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\docx\parts\document.py", line 130, in save
+    self.package.save(path_or_stream)
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\docx\opc\package.py", line 160, in save
+    PackageWriter.write(pkg_file, self.rels, self.parts)
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\docx\opc\pkgwriter.py", line 32, in write
+    phys_writer = PhysPkgWriter(pkg_file)
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\docx\opc\phys_pkg.py", line 141, in __init__
+    self._zipf = ZipFile(pkg_file, 'w', compression=ZIP_DEFLATED)
+  File "C:\Users\evillasante\Anaconda3\lib\zipfile.py", line 1204, in __init__
+    self.fp = io.open(file, filemode)
+PermissionError: [Errno 13] Permission denied: 'temp/temp.docx'
+2019-07-28 16:29:18,799 ERROR: Exception on /protocolo_print [GET] [in C:\Users\evillasante\Anaconda3\lib\site-packages\flask\app.py:1761]
+Traceback (most recent call last):
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\flask\app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\flask\app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\flask\app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\flask\_compat.py", line 35, in reraise
+    raise value
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\flask\app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:/Users/evillasante/Downloads/AMP-Tech-master3/Herokuapp/app.py", line 120, in protocolo_print
+    doc.save(filename)
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\docxtpl\__init__.py", line 558, in save
+    self.docx.save(filename,*args,**kwargs)
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\docx\document.py", line 142, in save
+    self._part.save(path_or_stream)
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\docx\parts\document.py", line 130, in save
+    self.package.save(path_or_stream)
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\docx\opc\package.py", line 160, in save
+    PackageWriter.write(pkg_file, self.rels, self.parts)
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\docx\opc\pkgwriter.py", line 32, in write
+    phys_writer = PhysPkgWriter(pkg_file)
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\docx\opc\phys_pkg.py", line 141, in __init__
+    self._zipf = ZipFile(pkg_file, 'w', compression=ZIP_DEFLATED)
+  File "C:\Users\evillasante\Anaconda3\lib\zipfile.py", line 1204, in __init__
+    self.fp = io.open(file, filemode)
+PermissionError: [Errno 13] Permission denied: 'temp/temp.docx'
+2019-07-28 16:32:19,142 ERROR: Exception on /protocolo_print [GET] [in C:\Users\evillasante\Anaconda3\lib\site-packages\flask\app.py:1761]
+Traceback (most recent call last):
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\flask\app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\flask\app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\flask\app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\flask\_compat.py", line 35, in reraise
+    raise value
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\flask\app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:/Users/evillasante/Downloads/AMP-Tech-master3/Herokuapp/app.py", line 120, in protocolo_print
+    doc.save(filename)
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\docxtpl\__init__.py", line 558, in save
+    self.docx.save(filename,*args,**kwargs)
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\docx\document.py", line 142, in save
+    self._part.save(path_or_stream)
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\docx\parts\document.py", line 130, in save
+    self.package.save(path_or_stream)
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\docx\opc\package.py", line 160, in save
+    PackageWriter.write(pkg_file, self.rels, self.parts)
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\docx\opc\pkgwriter.py", line 32, in write
+    phys_writer = PhysPkgWriter(pkg_file)
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\docx\opc\phys_pkg.py", line 141, in __init__
+    self._zipf = ZipFile(pkg_file, 'w', compression=ZIP_DEFLATED)
+  File "C:\Users\evillasante\Anaconda3\lib\zipfile.py", line 1204, in __init__
+    self.fp = io.open(file, filemode)
+PermissionError: [Errno 13] Permission denied: 'temp\\temp.docx'
+2019-07-28 16:32:19,142 ERROR: Exception on /protocolo_print [GET] [in C:\Users\evillasante\Anaconda3\lib\site-packages\flask\app.py:1761]
+Traceback (most recent call last):
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\flask\app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\flask\app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\flask\app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\flask\_compat.py", line 35, in reraise
+    raise value
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\flask\app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:/Users/evillasante/Downloads/AMP-Tech-master3/Herokuapp/app.py", line 120, in protocolo_print
+    doc.save(filename)
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\docxtpl\__init__.py", line 558, in save
+    self.docx.save(filename,*args,**kwargs)
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\docx\document.py", line 142, in save
+    self._part.save(path_or_stream)
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\docx\parts\document.py", line 130, in save
+    self.package.save(path_or_stream)
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\docx\opc\package.py", line 160, in save
+    PackageWriter.write(pkg_file, self.rels, self.parts)
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\docx\opc\pkgwriter.py", line 32, in write
+    phys_writer = PhysPkgWriter(pkg_file)
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\docx\opc\phys_pkg.py", line 141, in __init__
+    self._zipf = ZipFile(pkg_file, 'w', compression=ZIP_DEFLATED)
+  File "C:\Users\evillasante\Anaconda3\lib\zipfile.py", line 1204, in __init__
+    self.fp = io.open(file, filemode)
+PermissionError: [Errno 13] Permission denied: 'temp\\temp.docx'
+2019-07-28 17:24:20,198 ERROR: Exception on /upload [POST] [in C:\Users\evillasante\Anaconda3\lib\site-packages\flask\app.py:1761]
+Traceback (most recent call last):
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\flask\app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\flask\app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\flask\app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\flask\_compat.py", line 35, in reraise
+    raise value
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\flask\app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:/Users/evillasante/Downloads/AMP-Tech-master3/Herokuapp/app.py", line 92, in upload
+    filename, name = gd.detect_barcode(f)
+  File "C:\Users\evillasante\Downloads\AMP-Tech-master3\Herokuapp\googledrive.py", line 124, in detect_barcode
+    box = np.int0(box)
+NameError: name 'np' is not defined
+2019-07-28 17:24:20,198 ERROR: Exception on /upload [POST] [in C:\Users\evillasante\Anaconda3\lib\site-packages\flask\app.py:1761]
+Traceback (most recent call last):
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\flask\app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\flask\app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\flask\app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\flask\_compat.py", line 35, in reraise
+    raise value
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\flask\app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:/Users/evillasante/Downloads/AMP-Tech-master3/Herokuapp/app.py", line 92, in upload
+    filename, name = gd.detect_barcode(f)
+  File "C:\Users\evillasante\Downloads\AMP-Tech-master3\Herokuapp\googledrive.py", line 124, in detect_barcode
+    box = np.int0(box)
+NameError: name 'np' is not defined
+2019-07-28 17:25:22,869 ERROR: Exception on /upload [POST] [in C:\Users\evillasante\Anaconda3\lib\site-packages\flask\app.py:1761]
+Traceback (most recent call last):
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\flask\app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\flask\app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\flask\app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\flask\_compat.py", line 35, in reraise
+    raise value
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\flask\app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:/Users/evillasante/Downloads/AMP-Tech-master3/Herokuapp/app.py", line 92, in upload
+    filename, name = gd.detect_barcode(f)
+  File "C:\Users\evillasante\Downloads\AMP-Tech-master3\Herokuapp\googledrive.py", line 139, in detect_barcode
+    exec("qry = db_session.query(" + tablas + ").filter(" + tablas + ".id==" + str(reg) + ").first()")
+  File "<string>", line 1, in <module>
+NameError: name 'f0016' is not defined
+2019-07-28 17:25:22,869 ERROR: Exception on /upload [POST] [in C:\Users\evillasante\Anaconda3\lib\site-packages\flask\app.py:1761]
+Traceback (most recent call last):
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\flask\app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\flask\app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\flask\app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\flask\_compat.py", line 35, in reraise
+    raise value
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\flask\app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:/Users/evillasante/Downloads/AMP-Tech-master3/Herokuapp/app.py", line 92, in upload
+    filename, name = gd.detect_barcode(f)
+  File "C:\Users\evillasante\Downloads\AMP-Tech-master3\Herokuapp\googledrive.py", line 139, in detect_barcode
+    exec("qry = db_session.query(" + tablas + ").filter(" + tablas + ".id==" + str(reg) + ").first()")
+  File "<string>", line 1, in <module>
+NameError: name 'f0016' is not defined
+2019-07-28 21:48:50,204 ERROR: Exception on / [GET] [in C:\Users\evillasante\Anaconda3\lib\site-packages\flask\app.py:1761]
+Traceback (most recent call last):
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\flask\app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\flask\app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\flask\app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\flask\_compat.py", line 35, in reraise
+    raise value
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\flask\app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:/Users/evillasante/Downloads/AMP-Tech-master3/Herokuapp/app.py", line 25, in home
+    disc = gd.items_folder(service,'Formatos_Calidad')
+  File "C:\Users\evillasante\Downloads\AMP-Tech-master3\Herokuapp\googledrive.py", line 49, in items_folder
+    f_id = service.files().list(q=query,pageToken=None).execute()['items'][0]['id']
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\googleapiclient\_helpers.py", line 130, in positional_wrapper
+    return wrapped(*args, **kwargs)
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\googleapiclient\http.py", line 846, in execute
+    method=str(self.method), body=self.body, headers=self.headers)
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\googleapiclient\http.py", line 183, in _retry_request
+    raise exception
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\googleapiclient\http.py", line 164, in _retry_request
+    resp, content = http.request(uri, method, *args, **kwargs)
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\oauth2client\transport.py", line 175, in new_request
+    redirections, connection_type)
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\oauth2client\transport.py", line 282, in request
+    connection_type=connection_type)
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\httplib2\__init__.py", line 1953, in request
+    cachekey,
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\httplib2\__init__.py", line 1618, in _request
+    conn, request_uri, method, body, headers
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\httplib2\__init__.py", line 1556, in _conn_request
+    response = conn.getresponse()
+  File "C:\Users\evillasante\Anaconda3\lib\http\client.py", line 1321, in getresponse
+    response.begin()
+  File "C:\Users\evillasante\Anaconda3\lib\http\client.py", line 296, in begin
+    version, status, reason = self._read_status()
+  File "C:\Users\evillasante\Anaconda3\lib\http\client.py", line 257, in _read_status
+    line = str(self.fp.readline(_MAXLINE + 1), "iso-8859-1")
+  File "C:\Users\evillasante\Anaconda3\lib\socket.py", line 589, in readinto
+    return self._sock.recv_into(b)
+  File "C:\Users\evillasante\Anaconda3\lib\ssl.py", line 1052, in recv_into
+    return self.read(nbytes, buffer)
+  File "C:\Users\evillasante\Anaconda3\lib\ssl.py", line 911, in read
+    return self._sslobj.read(len, buffer)
+ssl.SSLError: [SSL: WRONG_VERSION_NUMBER] wrong version number (_ssl.c:2488)
+2019-07-28 21:48:50,204 ERROR: Exception on / [GET] [in C:\Users\evillasante\Anaconda3\lib\site-packages\flask\app.py:1761]
+Traceback (most recent call last):
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\flask\app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\flask\app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\flask\app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\flask\_compat.py", line 35, in reraise
+    raise value
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\flask\app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:/Users/evillasante/Downloads/AMP-Tech-master3/Herokuapp/app.py", line 25, in home
+    disc = gd.items_folder(service,'Formatos_Calidad')
+  File "C:\Users\evillasante\Downloads\AMP-Tech-master3\Herokuapp\googledrive.py", line 49, in items_folder
+    f_id = service.files().list(q=query,pageToken=None).execute()['items'][0]['id']
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\googleapiclient\_helpers.py", line 130, in positional_wrapper
+    return wrapped(*args, **kwargs)
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\googleapiclient\http.py", line 846, in execute
+    method=str(self.method), body=self.body, headers=self.headers)
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\googleapiclient\http.py", line 183, in _retry_request
+    raise exception
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\googleapiclient\http.py", line 164, in _retry_request
+    resp, content = http.request(uri, method, *args, **kwargs)
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\oauth2client\transport.py", line 175, in new_request
+    redirections, connection_type)
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\oauth2client\transport.py", line 282, in request
+    connection_type=connection_type)
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\httplib2\__init__.py", line 1953, in request
+    cachekey,
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\httplib2\__init__.py", line 1618, in _request
+    conn, request_uri, method, body, headers
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\httplib2\__init__.py", line 1556, in _conn_request
+    response = conn.getresponse()
+  File "C:\Users\evillasante\Anaconda3\lib\http\client.py", line 1321, in getresponse
+    response.begin()
+  File "C:\Users\evillasante\Anaconda3\lib\http\client.py", line 296, in begin
+    version, status, reason = self._read_status()
+  File "C:\Users\evillasante\Anaconda3\lib\http\client.py", line 257, in _read_status
+    line = str(self.fp.readline(_MAXLINE + 1), "iso-8859-1")
+  File "C:\Users\evillasante\Anaconda3\lib\socket.py", line 589, in readinto
+    return self._sock.recv_into(b)
+  File "C:\Users\evillasante\Anaconda3\lib\ssl.py", line 1052, in recv_into
+    return self.read(nbytes, buffer)
+  File "C:\Users\evillasante\Anaconda3\lib\ssl.py", line 911, in read
+    return self._sslobj.read(len, buffer)
+ssl.SSLError: [SSL: WRONG_VERSION_NUMBER] wrong version number (_ssl.c:2488)
+2019-07-28 21:48:50,206 ERROR: Exception on / [GET] [in C:\Users\evillasante\Anaconda3\lib\site-packages\flask\app.py:1761]
+Traceback (most recent call last):
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\flask\app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\flask\app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\flask\app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\flask\_compat.py", line 35, in reraise
+    raise value
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\flask\app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:/Users/evillasante/Downloads/AMP-Tech-master3/Herokuapp/app.py", line 25, in home
+    disc = gd.items_folder(service,'Formatos_Calidad')
+  File "C:\Users\evillasante\Downloads\AMP-Tech-master3\Herokuapp\googledrive.py", line 61, in items_folder
+    result = [service.files().get(fileId=x['id'] ).execute() for x in result]
+  File "C:\Users\evillasante\Downloads\AMP-Tech-master3\Herokuapp\googledrive.py", line 61, in <listcomp>
+    result = [service.files().get(fileId=x['id'] ).execute() for x in result]
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\googleapiclient\_helpers.py", line 130, in positional_wrapper
+    return wrapped(*args, **kwargs)
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\googleapiclient\http.py", line 846, in execute
+    method=str(self.method), body=self.body, headers=self.headers)
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\googleapiclient\http.py", line 183, in _retry_request
+    raise exception
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\googleapiclient\http.py", line 164, in _retry_request
+    resp, content = http.request(uri, method, *args, **kwargs)
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\oauth2client\transport.py", line 175, in new_request
+    redirections, connection_type)
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\oauth2client\transport.py", line 282, in request
+    connection_type=connection_type)
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\httplib2\__init__.py", line 1953, in request
+    cachekey,
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\httplib2\__init__.py", line 1618, in _request
+    conn, request_uri, method, body, headers
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\httplib2\__init__.py", line 1556, in _conn_request
+    response = conn.getresponse()
+  File "C:\Users\evillasante\Anaconda3\lib\http\client.py", line 1321, in getresponse
+    response.begin()
+  File "C:\Users\evillasante\Anaconda3\lib\http\client.py", line 296, in begin
+    version, status, reason = self._read_status()
+  File "C:\Users\evillasante\Anaconda3\lib\http\client.py", line 257, in _read_status
+    line = str(self.fp.readline(_MAXLINE + 1), "iso-8859-1")
+  File "C:\Users\evillasante\Anaconda3\lib\socket.py", line 589, in readinto
+    return self._sock.recv_into(b)
+  File "C:\Users\evillasante\Anaconda3\lib\ssl.py", line 1052, in recv_into
+    return self.read(nbytes, buffer)
+  File "C:\Users\evillasante\Anaconda3\lib\ssl.py", line 911, in read
+    return self._sslobj.read(len, buffer)
+ssl.SSLError: [SSL: WRONG_VERSION_NUMBER] wrong version number (_ssl.c:2488)
+2019-07-28 21:48:50,206 ERROR: Exception on / [GET] [in C:\Users\evillasante\Anaconda3\lib\site-packages\flask\app.py:1761]
+Traceback (most recent call last):
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\flask\app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\flask\app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\flask\app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\flask\_compat.py", line 35, in reraise
+    raise value
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\flask\app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:/Users/evillasante/Downloads/AMP-Tech-master3/Herokuapp/app.py", line 25, in home
+    disc = gd.items_folder(service,'Formatos_Calidad')
+  File "C:\Users\evillasante\Downloads\AMP-Tech-master3\Herokuapp\googledrive.py", line 61, in items_folder
+    result = [service.files().get(fileId=x['id'] ).execute() for x in result]
+  File "C:\Users\evillasante\Downloads\AMP-Tech-master3\Herokuapp\googledrive.py", line 61, in <listcomp>
+    result = [service.files().get(fileId=x['id'] ).execute() for x in result]
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\googleapiclient\_helpers.py", line 130, in positional_wrapper
+    return wrapped(*args, **kwargs)
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\googleapiclient\http.py", line 846, in execute
+    method=str(self.method), body=self.body, headers=self.headers)
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\googleapiclient\http.py", line 183, in _retry_request
+    raise exception
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\googleapiclient\http.py", line 164, in _retry_request
+    resp, content = http.request(uri, method, *args, **kwargs)
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\oauth2client\transport.py", line 175, in new_request
+    redirections, connection_type)
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\oauth2client\transport.py", line 282, in request
+    connection_type=connection_type)
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\httplib2\__init__.py", line 1953, in request
+    cachekey,
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\httplib2\__init__.py", line 1618, in _request
+    conn, request_uri, method, body, headers
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\httplib2\__init__.py", line 1556, in _conn_request
+    response = conn.getresponse()
+  File "C:\Users\evillasante\Anaconda3\lib\http\client.py", line 1321, in getresponse
+    response.begin()
+  File "C:\Users\evillasante\Anaconda3\lib\http\client.py", line 296, in begin
+    version, status, reason = self._read_status()
+  File "C:\Users\evillasante\Anaconda3\lib\http\client.py", line 257, in _read_status
+    line = str(self.fp.readline(_MAXLINE + 1), "iso-8859-1")
+  File "C:\Users\evillasante\Anaconda3\lib\socket.py", line 589, in readinto
+    return self._sock.recv_into(b)
+  File "C:\Users\evillasante\Anaconda3\lib\ssl.py", line 1052, in recv_into
+    return self.read(nbytes, buffer)
+  File "C:\Users\evillasante\Anaconda3\lib\ssl.py", line 911, in read
+    return self._sslobj.read(len, buffer)
+ssl.SSLError: [SSL: WRONG_VERSION_NUMBER] wrong version number (_ssl.c:2488)
+2019-07-29 13:41:09,704 ERROR: Exception on / [GET] [in C:\Users\evillasante\Anaconda3\lib\site-packages\flask\app.py:1761]
+Traceback (most recent call last):
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\flask\app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\flask\app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\flask\app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\flask\_compat.py", line 35, in reraise
+    raise value
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\flask\app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:/Users/evillasante/Downloads/AMP-Tech-master3/Herokuapp/app.py", line 25, in home
+    disc = gd.items_folder(service,'Formatos_Calidad')
+  File "C:\Users\evillasante\Downloads\AMP-Tech-master3\Herokuapp\googledrive.py", line 49, in items_folder
+    f_id = service.files().list(q=query,pageToken=None).execute()['items'][0]['id']
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\googleapiclient\_helpers.py", line 130, in positional_wrapper
+    return wrapped(*args, **kwargs)
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\googleapiclient\http.py", line 846, in execute
+    method=str(self.method), body=self.body, headers=self.headers)
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\googleapiclient\http.py", line 183, in _retry_request
+    raise exception
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\googleapiclient\http.py", line 164, in _retry_request
+    resp, content = http.request(uri, method, *args, **kwargs)
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\oauth2client\transport.py", line 175, in new_request
+    redirections, connection_type)
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\oauth2client\transport.py", line 282, in request
+    connection_type=connection_type)
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\httplib2\__init__.py", line 1953, in request
+    cachekey,
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\httplib2\__init__.py", line 1618, in _request
+    conn, request_uri, method, body, headers
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\httplib2\__init__.py", line 1556, in _conn_request
+    response = conn.getresponse()
+  File "C:\Users\evillasante\Anaconda3\lib\http\client.py", line 1321, in getresponse
+    response.begin()
+  File "C:\Users\evillasante\Anaconda3\lib\http\client.py", line 296, in begin
+    version, status, reason = self._read_status()
+  File "C:\Users\evillasante\Anaconda3\lib\http\client.py", line 257, in _read_status
+    line = str(self.fp.readline(_MAXLINE + 1), "iso-8859-1")
+  File "C:\Users\evillasante\Anaconda3\lib\socket.py", line 589, in readinto
+    return self._sock.recv_into(b)
+  File "C:\Users\evillasante\Anaconda3\lib\ssl.py", line 1052, in recv_into
+    return self.read(nbytes, buffer)
+  File "C:\Users\evillasante\Anaconda3\lib\ssl.py", line 911, in read
+    return self._sslobj.read(len, buffer)
+ssl.SSLError: [SSL: WRONG_VERSION_NUMBER] wrong version number (_ssl.c:2488)
+2019-07-29 13:41:09,704 ERROR: Exception on / [GET] [in C:\Users\evillasante\Anaconda3\lib\site-packages\flask\app.py:1761]
+Traceback (most recent call last):
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\flask\app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\flask\app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\flask\app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\flask\_compat.py", line 35, in reraise
+    raise value
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\flask\app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:/Users/evillasante/Downloads/AMP-Tech-master3/Herokuapp/app.py", line 25, in home
+    disc = gd.items_folder(service,'Formatos_Calidad')
+  File "C:\Users\evillasante\Downloads\AMP-Tech-master3\Herokuapp\googledrive.py", line 49, in items_folder
+    f_id = service.files().list(q=query,pageToken=None).execute()['items'][0]['id']
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\googleapiclient\_helpers.py", line 130, in positional_wrapper
+    return wrapped(*args, **kwargs)
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\googleapiclient\http.py", line 846, in execute
+    method=str(self.method), body=self.body, headers=self.headers)
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\googleapiclient\http.py", line 183, in _retry_request
+    raise exception
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\googleapiclient\http.py", line 164, in _retry_request
+    resp, content = http.request(uri, method, *args, **kwargs)
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\oauth2client\transport.py", line 175, in new_request
+    redirections, connection_type)
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\oauth2client\transport.py", line 282, in request
+    connection_type=connection_type)
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\httplib2\__init__.py", line 1953, in request
+    cachekey,
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\httplib2\__init__.py", line 1618, in _request
+    conn, request_uri, method, body, headers
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\httplib2\__init__.py", line 1556, in _conn_request
+    response = conn.getresponse()
+  File "C:\Users\evillasante\Anaconda3\lib\http\client.py", line 1321, in getresponse
+    response.begin()
+  File "C:\Users\evillasante\Anaconda3\lib\http\client.py", line 296, in begin
+    version, status, reason = self._read_status()
+  File "C:\Users\evillasante\Anaconda3\lib\http\client.py", line 257, in _read_status
+    line = str(self.fp.readline(_MAXLINE + 1), "iso-8859-1")
+  File "C:\Users\evillasante\Anaconda3\lib\socket.py", line 589, in readinto
+    return self._sock.recv_into(b)
+  File "C:\Users\evillasante\Anaconda3\lib\ssl.py", line 1052, in recv_into
+    return self.read(nbytes, buffer)
+  File "C:\Users\evillasante\Anaconda3\lib\ssl.py", line 911, in read
+    return self._sslobj.read(len, buffer)
+ssl.SSLError: [SSL: WRONG_VERSION_NUMBER] wrong version number (_ssl.c:2488)
+2019-07-29 13:41:09,706 ERROR: Exception on / [GET] [in C:\Users\evillasante\Anaconda3\lib\site-packages\flask\app.py:1761]
+Traceback (most recent call last):
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\flask\app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\flask\app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\flask\app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\flask\_compat.py", line 35, in reraise
+    raise value
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\flask\app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:/Users/evillasante/Downloads/AMP-Tech-master3/Herokuapp/app.py", line 25, in home
+    disc = gd.items_folder(service,'Formatos_Calidad')
+  File "C:\Users\evillasante\Downloads\AMP-Tech-master3\Herokuapp\googledrive.py", line 61, in items_folder
+    result = [service.files().get(fileId=x['id'] ).execute() for x in result]
+  File "C:\Users\evillasante\Downloads\AMP-Tech-master3\Herokuapp\googledrive.py", line 61, in <listcomp>
+    result = [service.files().get(fileId=x['id'] ).execute() for x in result]
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\googleapiclient\_helpers.py", line 130, in positional_wrapper
+    return wrapped(*args, **kwargs)
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\googleapiclient\http.py", line 846, in execute
+    method=str(self.method), body=self.body, headers=self.headers)
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\googleapiclient\http.py", line 183, in _retry_request
+    raise exception
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\googleapiclient\http.py", line 164, in _retry_request
+    resp, content = http.request(uri, method, *args, **kwargs)
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\oauth2client\transport.py", line 175, in new_request
+    redirections, connection_type)
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\oauth2client\transport.py", line 282, in request
+    connection_type=connection_type)
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\httplib2\__init__.py", line 1953, in request
+    cachekey,
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\httplib2\__init__.py", line 1618, in _request
+    conn, request_uri, method, body, headers
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\httplib2\__init__.py", line 1556, in _conn_request
+    response = conn.getresponse()
+  File "C:\Users\evillasante\Anaconda3\lib\http\client.py", line 1321, in getresponse
+    response.begin()
+  File "C:\Users\evillasante\Anaconda3\lib\http\client.py", line 296, in begin
+    version, status, reason = self._read_status()
+  File "C:\Users\evillasante\Anaconda3\lib\http\client.py", line 257, in _read_status
+    line = str(self.fp.readline(_MAXLINE + 1), "iso-8859-1")
+  File "C:\Users\evillasante\Anaconda3\lib\socket.py", line 589, in readinto
+    return self._sock.recv_into(b)
+  File "C:\Users\evillasante\Anaconda3\lib\ssl.py", line 1052, in recv_into
+    return self.read(nbytes, buffer)
+  File "C:\Users\evillasante\Anaconda3\lib\ssl.py", line 911, in read
+    return self._sslobj.read(len, buffer)
+ssl.SSLError: [SSL: WRONG_VERSION_NUMBER] wrong version number (_ssl.c:2488)
+2019-07-29 13:41:09,706 ERROR: Exception on / [GET] [in C:\Users\evillasante\Anaconda3\lib\site-packages\flask\app.py:1761]
+Traceback (most recent call last):
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\flask\app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\flask\app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\flask\app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\flask\_compat.py", line 35, in reraise
+    raise value
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\flask\app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:/Users/evillasante/Downloads/AMP-Tech-master3/Herokuapp/app.py", line 25, in home
+    disc = gd.items_folder(service,'Formatos_Calidad')
+  File "C:\Users\evillasante\Downloads\AMP-Tech-master3\Herokuapp\googledrive.py", line 61, in items_folder
+    result = [service.files().get(fileId=x['id'] ).execute() for x in result]
+  File "C:\Users\evillasante\Downloads\AMP-Tech-master3\Herokuapp\googledrive.py", line 61, in <listcomp>
+    result = [service.files().get(fileId=x['id'] ).execute() for x in result]
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\googleapiclient\_helpers.py", line 130, in positional_wrapper
+    return wrapped(*args, **kwargs)
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\googleapiclient\http.py", line 846, in execute
+    method=str(self.method), body=self.body, headers=self.headers)
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\googleapiclient\http.py", line 183, in _retry_request
+    raise exception
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\googleapiclient\http.py", line 164, in _retry_request
+    resp, content = http.request(uri, method, *args, **kwargs)
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\oauth2client\transport.py", line 175, in new_request
+    redirections, connection_type)
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\oauth2client\transport.py", line 282, in request
+    connection_type=connection_type)
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\httplib2\__init__.py", line 1953, in request
+    cachekey,
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\httplib2\__init__.py", line 1618, in _request
+    conn, request_uri, method, body, headers
+  File "C:\Users\evillasante\Anaconda3\lib\site-packages\httplib2\__init__.py", line 1556, in _conn_request
+    response = conn.getresponse()
+  File "C:\Users\evillasante\Anaconda3\lib\http\client.py", line 1321, in getresponse
+    response.begin()
+  File "C:\Users\evillasante\Anaconda3\lib\http\client.py", line 296, in begin
+    version, status, reason = self._read_status()
+  File "C:\Users\evillasante\Anaconda3\lib\http\client.py", line 257, in _read_status
+    line = str(self.fp.readline(_MAXLINE + 1), "iso-8859-1")
+  File "C:\Users\evillasante\Anaconda3\lib\socket.py", line 589, in readinto
+    return self._sock.recv_into(b)
+  File "C:\Users\evillasante\Anaconda3\lib\ssl.py", line 1052, in recv_into
+    return self.read(nbytes, buffer)
+  File "C:\Users\evillasante\Anaconda3\lib\ssl.py", line 911, in read
+    return self._sslobj.read(len, buffer)
+ssl.SSLError: [SSL: WRONG_VERSION_NUMBER] wrong version number (_ssl.c:2488)

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <title>{% block title %}{% endblock %}</title>
+      <meta name = "viewport" content = "width = device-width, initial-scale = 1">
+      <link rel = "stylesheet" href = "https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+      <script src = "https://code.jquery.com/jquery-1.11.3.min.js"></script>
+      <script src = "https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+   </head>
+
+   <body>
+    <div data-role="footer">		
+	 <div data-role="navbar">
+		<ul>
+			<li><a href="#" class="split-button-custom" data-role="button" data-icon="home" data-iconpos="notext">Inicio</a></li>
+			<li><a href="#" class="split-button-custom" data-role="button" data-icon="search" data-iconpos="notext">Buscar</a></li>
+			<li><a href="#" class="split-button-custom" data-role="button" data-icon="grid" data-iconpos="notext">Menu</a></li>
+		</ul>
+	 </div><!-- /navbar -->
+    </div><!-- /footer -->
+    <ul data-role="listview" data-filter="true" data-filter-reveal="false" data-filter-placeholder="Search..." data-inset="true">
+        {% block content %}{% endblock %}
+    </ul>
+    <div data-role="footer" class="ui-bar">
+	<a href="index.html" data-role="button" data-icon="plus">Add</a>
+	<a href="index.html" data-role="button" data-icon="arrow-u">Up</a>
+	<a href="index.html" data-role="button" data-icon="arrow-d">Down</a>
+</div>
+</body>
+</html>
+

@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+      <title>{% block title %}{% endblock %}</title>
+      <meta name = "viewport" content = "width = device-width, initial-scale = 1">
+      <link rel = "stylesheet" href = "https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+      <script src = "https://code.jquery.com/jquery-1.11.3.min.js"></script>
+      <script src = "https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+      <script type="text/javascript">
+      $(document).ready(function() {
+
+       });
+      </script>
+</head>
+<style type='text/css'>
+.active
+{
+    background-color: #4dcdff;
+}
+</style>
+<body>
+    <form action="/edit_protocolo" method="post">
+    <div><input name="id" type="hidden" value=""/></div>
+    <div><input name="area" type="hidden" value=""/></div>
+    <div><input name="subarea" type="hidden" value=""/></div>
+    <div id="inputs">Ubicacion
+    <input id="inset-autocomplete-input" name="ubicacion" data-type="search" placeholder="Buscar area...">
+        <ul id="autocomplete" data-role="listview" data-inset="true" data-filter="true" data-filter-reveal="true" data-input="#inset-autocomplete-input" >
+    </div>
+    <div>Elemento:<input name="elemento" type="text" value=""/></div>
+    <div>Fecha:<input name="fecha" type="date" value=""/></div>
+    <div id="planoinputs">Planos:<input id="planoinset-autocomplete-input" name="plan" placeholder="Add new plano" data-type="search" placeholder="Buscar planos..."/>
+        <ul id="planoautocomplete" data-role="listview" data-inset="true" data-filter="true" data-filter-reveal="true" data-input="#planoinset-autocomplete-input" >
+    </div>
+    <div id="inputsadd">
+    <input type="button" value="Add" id="addContribution"/>
+        <ul data-role="listview" id="contributionList" data-split-icon="delete" data-split-theme="d"></ul>
+    </div>
+    <input id="plano" name="plano" type="hidden" value=""/>
+
+    {% block content %}{% endblock %}
+    
+    <div>Observaciones:<input id="observacion" name="observacion" type="text" value=""/></div>
+    <input type="submit" value="Guardar" />
+    </form>
+<script type=text/javascript>
+     $SCRIPT_ROOT = {{ request.script_root|tojson|safe }};
+
+     $( document ).ready(function() {
+      $.getJSON($SCRIPT_ROOT + '/getData', {
+        q: $SCRIPT_ROOT,
+      }, function(data) {
+         $.each( JSON.parse(data), function ( i, val ) {
+            $("#autocomplete").append("<li ><a class='anchorclass' href=#>" + val + "</a></li>");
+         });
+         $("#autocomplete").listview( 'refresh' );
+      });
+    });
+
+     $( document ).ready(function() {
+      $.getJSON($SCRIPT_ROOT + '/planogetData', {
+        q: $SCRIPT_ROOT,
+      }, function(data) {
+         $.each( JSON.parse(data), function ( i, val ) {
+            $("#planoautocomplete").append("<li ><a class='anchorclass' href=#>" + val + "</a></li>");
+         });
+         $("#planoautocomplete").listview( 'refresh' );
+      });
+    });
+
+    $("#inputs").on('click','li',function (){
+        $('#inset-autocomplete-input').val($(this).text());
+        var ubica = $('#inset-autocomplete-input').val();
+        var str = ubica.split(" ")[0]
+        var area = str.substring(0, str.length - 2);
+        var subarea = str.substring(0, str.length - 1);
+        $("input[name='area']").val(area + "00")
+        $("input[name='subarea']").val(subarea + "0")
+        $("#autocomplete").listview( 'refresh' );
+        $("#autocomplete").attr("hidden",true);
+    }); 
+
+    $("#planoinputs").on('click','li',function (){
+        $('#planoinset-autocomplete-input').val($(this).text());
+        $("#planoautocomplete").listview( 'refresh' );
+        $("#planoautocomplete").attr("hidden",true);
+    }); 
+
+    $( "#inset-autocomplete-input" ).keypress(function( event ) {
+        $("#autocomplete").attr("hidden",false);
+    });
+
+    $( "#planoinset-autocomplete-input" ).keypress(function( event ) {
+        $("#planoautocomplete").attr("hidden",false);
+    });
+    
+    $("#addContribution").on('mousedown touchstart', function(){
+    var newAmount = $('#planoinset-autocomplete-input').val();
+    if(newAmount != '') {
+        $.getJSON($SCRIPT_ROOT + '/planogetid', {
+            q: newAmount,
+        }, function(data) {
+             $('#contributionList').append('<li><a href=https://drive.google.com/uc?id=' + data +'>' + newAmount + '</a><a class="deleteMe"></a></li>').listview('refresh');
+             var column1RelArray = $('#contributionList').text();
+             $('#plano').val(column1RelArray);
+        });
+        $('#planoinset-autocomplete-input').val('');
+        }
+    $(".deleteMe").on('click', function (){
+        $(this).parent().remove();
+        $('#contributionList').listview('refresh');
+        var column1RelArray = $('#contributionList').text();
+        $('#plano').val(column1RelArray);
+    });    
+    });
+</script>
+<script type=text/javascript>
+ {% block script %}{% endblock %}
+</script>
+</body>
+</html>

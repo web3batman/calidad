@@ -1,0 +1,16 @@
+{% extends 'layouts/main_list.html' %}
+{% block title %}About{% endblock %}
+{% block content %}
+    {%if table %}
+        {%for a in table %}
+          <li>
+            <a href="/protocolo_print?id={{ a.id }}&formato={{ formato }}">
+            <p class="ui-li-aside">{{a.fscan}}</p>
+              <h3>{{a.id}} {{a.elemento}}</h3>
+            </a>
+            <a href="/protocolo_print?id={{ a.id }}&formato={{ formato }}" class="split-button-custom" data-role="button" data-icon="gear" data-iconpos="notext">Borrar</a>
+          </li>
+        {%endfor%}
+    {%endif%}
+{% endblock %}
+

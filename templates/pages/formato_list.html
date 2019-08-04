@@ -1,0 +1,17 @@
+{% extends 'layouts/main_list.html' %}
+{% block title %}About{% endblock %}
+{% block content %}
+    {%if table %}
+        {%for a in table %}
+          <li>
+          {% with n1, n2 = a.split('_') %}
+            <a href="/list_protocolo?format={{n1}}">
+              <h3>{{n2}}</h3>
+            </a>
+            <a href="/edit_protocolo?format={{n1}}" class="split-button-custom" data-role="button" data-icon="gear" data-iconpos="notext">Borrar</a>
+          </li>
+          {% endwith %} 
+        {%endfor%}
+    {%endif%}
+{% endblock %}
+

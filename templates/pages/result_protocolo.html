@@ -1,0 +1,27 @@
+{% extends 'layouts/main_list.html' %}
+{% block title %}About{% endblock %}
+{% block content %}
+  <li>
+    <a href="{{embedLink}}">
+      <h3>embedLink</h3>
+    </a>
+    <a href="/area_edit?id={{ a}}" class="split-button-custom" data-role="button" data-icon="arrow-r" data-iconpos="notext">Editar</a>
+  </li>
+  <li>
+    <a href="{{downloadlink}}">
+      <h3>downloadlink</h3>
+    </a>
+    <a href="/area_edit?id={{ a}}" class="split-button-custom" data-role="button" data-icon="arrow-r" data-iconpos="notext">Editar</a>
+  </li>
+{%if planos %}
+    {%for a in planos %}  
+      <li>
+        <a href="https://drive.google.com/uc?id={{a}}">
+          <h3>plano</h3>
+        </a>
+        <a href="/area_edit?id={{ a}}" class="split-button-custom" data-role="button" data-icon="arrow-r" data-iconpos="notext">Editar</a>
+      </li>
+    {%endfor%}
+{%endif%}  
+{% endblock %}
+

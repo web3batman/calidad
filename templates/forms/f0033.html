@@ -1,0 +1,32 @@
+{% extends 'forms/main_template.html' %}
+{% block title %}Curado{% endblock %}
+{% block content %}
+    <div>Nombre de soldador:<input id="soldador" name="soldador"/>
+    </div>
+    <fieldset data-role="controlgroup" data-type="horizontal">
+        <legend>Ubicación Coordenadas:</legend>
+        <input type="radio" name="item" id="e13a" value="5i-1"  checked="checked">
+        <label for="e13a">5i-1</label>
+        <input type="radio" name="item" id="e13b" value="5i-2">
+        <label for="e13b">5i-2</label>
+    </fieldset> 
+
+    <input type="button" value="Add" id="additem"/>
+        <ul data-role="listview" id="listitems" data-split-icon="delete" data-split-theme="d"></ul>
+    <input id="items" name="items" type="hidden" value=""/>
+{% endblock %}
+{% block script %}
+    $("#additem").on('mousedown touchstart', function(){
+    var newAmount = $('input[name=item]:checked').val();
+    if(newAmount != '') {
+        $('#listitems').append('<li><a>' + newAmount + ' </a><a class="deleteMe1"></a></li>').listview('refresh');
+        var column1RelArray = $('#listitems').text();
+        $('#items').val(column1RelArray);
+        $('#item').val('');
+       }
+        $(".deleteMe1").on('click', function (){
+        $(this).parent().remove();
+        $('#contributionList').listview('refresh');
+     });  
+    }); 
+{% endblock %}

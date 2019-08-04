@@ -1,0 +1,17 @@
+{% extends 'layouts/main_list.html' %}
+{% block title %}About{% endblock %}
+{% block content %}
+    {%if table %}
+        {%for a in table %}
+          <li>
+            <a href="/list_formato?disciplina={{ a }}">
+              <h3>{{a}}</h3>
+            </a>
+            <a href="/area_edit?id={{ a}}" class="split-button-custom" data-role="button" data-icon="arrow-r" data-iconpos="notext">Editar</a>
+            <a href="/area_delete?id={{ a }}" class="split-button-custom" data-role="button" data-icon="gear" data-iconpos="notext">Borrar</a>
+            <a href="#" style="display: none;">Dummy</a>
+          </li>
+        {%endfor%}
+    {%endif%}
+{% endblock %}
+
